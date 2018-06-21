@@ -35,7 +35,7 @@ The ModelObject system has only to "verbs", or operations or methods:  doCommand
 
 The DatabasePersistence class implements "select", "insert", "update", "delete", and "save" (combination of update/insert).  They operate based on the metadata (BaseTable and PrimaryKey) in the ModelObject-derived classes.  In the simplest case, you can define a ModelObject-derived class along with the appropriate metadata, and read and write it from and to the database immediately.  By setting properties on the ModelObject class (assigning name-value pairs), you are "dirtying" the object.  The persistence layer takes the assigned named-value pairs and uses them to build the sql statement to send to the database.  It is possible to mess up and incorrectly spell a field name. Therefore, for Lift, data members that act as database fields have been added.  They don't do much but hopefully they help reduce coding errors.
 
-#time zone handling
+# time zone handling
 
 From a policy standpoint, all times are stored in the database in UTC.  However, all times are _displayed_ in the application in either the user's time_zone preference or the organization's time_zone preference. 
 
@@ -66,7 +66,7 @@ myTextBox.Text = myObject.my_time.Value.ToString(); // automatically adjusts to 
 // we can localize the datetime format also...
 myTextBox.Text = myObject.my_time.Value.ToString( Language.Current.datetimeformat );
 
-#schema change policy
+# schema change policy
 
 Schema changes will need to be added to an update_nn.sql script in the db folder.  When we go live, we will take the original reference schema then apply the updates in succession. The updates can include structure and data.  If you look at them, you will see some small schema changes I've made plus some changes to the static data, including the language support.  The exception will be the identity column info.  I will create scripts to enable and disable identity properties across the schema.  When we go live, we will have as many as four organizations at once.  Their separate schemas will be merged into a single schema, updates applied, then identities turned on as the last step.  That's the plan, anyway.
 
