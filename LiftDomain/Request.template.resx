@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="get_request" xml:space="preserve">
+    <value>SELECT *, isnull( rt.title, '') [requesttype_title] FROM requests r 
+left outer join requesttypes rt on rt.id = r.requesttype_id
+WHERE r.organization_id=${organization_id}
+AND (r.id=${id}) 
+	</value>
+  </data>
+  <data name="get_requests" xml:space="preserve">
+    <value>declare @approval_threshold int
+declare @listed_threshold int
+declare @timeframe int
+declare @organization_id int
+declare @requesttype int
+declare @search varchar(100)
+declare @active int
+
+set @approval_threshold=${approval_threshold}
+set @listed_threshold=${listed_threshold}
+set @timeframe=${timeframe}
+set @organization_id=${organization_id}
+set @requesttype=${requesttype}
+set @search=${search}
+set @active=${active}
+
+SELECT r.*, 
+isnull( rt.title, '') [requesttype_title], 
+isnull( enc_request_id, 0) [enc_request_id],
+isnull( enc_count, 0) [enc_count],
+isnull( enc_last_updated, r.last_action) [enc_last_updated],
+isnull( enc_note, '') [enc_note],
+isnull( enc_type, 0) [enc_type],
+isnull( enc_from, '') [enc_from],
+isnull( enc_post_date, r.post_date) [enc_post_date],
+isnull( enc_id, 0 ) [enc_id],
+(select min(ea.is_approved) from encouragements ea where ea.request_id=r.id) [enc_is_approved]
+FROM requests r 
+left outer join requesttypes rt on rt.id = r.requesttype_id
+left outer join 
+(
+select 
+e_count.request_id as enc_request_id,
+e_count.updates as enc_count,
+e_count.last_updated as enc_last_updated,
+e_detail.id as enc_id,
+e_detail.note as enc_note,
+e_detail.[from] as enc_from,
+e_detail.encouragement_type as enc_type,
+e_detail.post_date as enc_post_date
+
+ from
+(
+select e.request_id as request_id, count(*) as updates, max(updated_at) last_updated from
+encouragements e
+where @listed_threshold &lt;= e.listed  
+and e.is_approved &gt;= @approval_threshold 
+and  (( @approval_threshold = 1 and e.encouragement_type &lt;&gt; 4) or ( @approval_threshold = 0))
+group by e.request_id
+) e_count,
+
+(
+select e_data.request_id as request_id, 
+e_data.id as id,
+e_data.encouragement_type as encouragement_type, 
+e_data.note as note, 
+e_data.listed as listed,
+e_data.is_approved as is_approved,
+e_data.post_date as post_date,
+e_data.[from] 
+from encouragements e_data where
+updated_at= (select max(updated_at) 
+                        from encouragements ee 
+                        where ee.request_id=e_data.request_id
+                        and @listed_threshold &lt;= ee.listed  
+                        and ee.is_approved &gt;= @approval_threshold 
+                        and  (( @approval_threshold = 1 and ee.encouragement_type &lt;&gt; 4) or ( @approval_threshold = 0))
+
+                     )
+) e_detail
+where e_count.request_id=e_detail.request_id
+and @listed_threshold &lt;= e_detail.listed  
+and e_detail.is_approved &gt;= @approval_threshold 
+and  (( @approval_threshold = 1 and e_detail.encouragement_type &lt;&gt; 4) or ( @approval_threshold = 0))
+) enc on r.id=enc.enc_request_id
+
+WHERE (r.last_action &gt;= dateadd( day, @timeframe, getdate()) 
+AND r.is_approved &gt;= @approval_threshold 
+AND @listed_threshold &lt;= r.listed  
+AND r.organization_id=@organization_id
+AND (rt.id=@requesttype 
+	OR @requesttype=0)) 
+AND (r.[from] like '%'+@search+ '%'
+	OR r.[title] like '%'+@search+ '%'
+	OR r.[description] like '%'+@search+ '%'
+	OR @search='')
+AND r.active=@active
+ORDER BY
+ r.is_approved, r.listed, r.total_requests ASC</value>
+  </data>
+  <data name="get_my_account_requests" xml:space="preserve">
+    <value>SELECT *, isnull( rt.title, '') [requesttype_title] FROM requests r 
+LEFT OUTER JOIN requesttypes rt ON rt.id = r.requesttype_id
+WHERE r.organization_id=${organization_id}
+AND (r.user_id=${user_id}) 
+	</value>
+  </data>
+  <data name="approve_internal" xml:space="preserve">
+    <value>update requests set is_approved=${is_approved}, updated_at=${updated_at}, last_action=${last_action} where id=${id}</value>
+  </data>
+  <data name="get_most_recent_update" xml:space="preserve">
+    <value>select * from
+(
+select r.id, r.title, r.description, r.post_date [post_date], r.[from], r.from_email
+from requests r where r.id=${id}
+union all
+select r2.id, r2.title, e.note [description], e.post_date [post_date],e.[from], e.from_email
+from
+requests r2, encouragements e
+where e.request_id=r2.id
+and r2.id=${id}
+) x
+order by x.post_date desc</value>
+  </data>
+</root>

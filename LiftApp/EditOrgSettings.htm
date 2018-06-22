@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sugar Creek Baptist Church - Prayer Requests</title>
+<script src="/javascripts/prototype.js" type="text/javascript"></script>
+<script src="/javascripts/effects.js" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+<script src="/javascripts/controls.js" type="text/javascript"></script>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+<script src="/javascripts/swfobject.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/form.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/custom-default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/custom-scbc.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
+ <!--[if lt IE 7]>
+  <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link href="http://sugarcreek.liftprayer.net/request/rss" rel="alternate" title="RSS" type="application/rss+xml" />
+</head>
+<body id="watchman">
+<div>
+    <img id="staticSpinner" src="/images/staticspinner.gif" alt="" width="100" height="25" style="display: none;"/>
+</div>
+<div id="page">
+	<div id="header">
+		<div id="header-top">
+			<div id="header-top-right">
+				<div id="userDetail">
+					<h3 class="userInfo">
+													Eric Kohlenberg (<a href="/login/logout">Log Out</a>)
+												<span class="pipe">|</span><a href="/help" class="">Help</a>
+						<span class="pipe">|</span><a href="/contact" class="">Contact Us</a>
+													<br />My Prayer Time: <strong>Northeast Wall, Friday-5:00 AM</strong>
+											</h3>
+				</div>
+				<div id="topNav">
+					<ul class="rightAlignedNav">
+						<li><a href="http://www.mysugarcreek.net">Home</a></li>
+						<li><a href="http://www.mysugarcreek.net/about/">About Us</a></li>
+						<li><a href="http://www.mysugarcreek.net/calendar/">Calendar</a></li>
+						<li><a href="http://www.mysugarcreek.net/sermons/">Sermons & Media</a></li>
+						<li><a href="http://www.mysugarcreek.net/lovelead/prayer/">Prayer</a></li>
+						<li><a href="http://www.mysugarcreek.net/giving/">Giving</a></li>
+						<li><a href="http://www.mysugarcreek.net/links.aspx">Links</a></li>
+						<li><a href="javascript:launchcontact();">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="header-center">
+			<div id="header-center-top"></div>
+			<div id="header-center-center">
+				
+				<img alt="Lift_banner1" src="/images/LIFT_Banner1.jpg?1232209074" />
+			</div>
+			<div id="header-center-bottom">			
+			
+			<ul class="leftAlignedNav">
+		        <li class="addButton"><a href="/request/new"  ><img src='/images/plus-green-sml.gif' alt='' />Add Prayer Request</a></li>
+				
+		    </ul>
+			
+
+			<ul class="rightAlignedNav">
+				<li><a href="/request"  >Prayer Requests</a></li>
+				<li><a href="/prayersession"  title="An online prayer helper">Prayer Session</a></li>
+				<li><a href="/wall"  title="Sign up or change your prayer hour">Watchman Wall</a></li>
+
+									<li><a href="/account" >My Account</a></li>
+
+					
+											<li><a href="/admin" >Administration</a></li>
+													
+		    </ul>
+			</div>
+			<div class="head-info"></div>
+		</div>
+	</div>
+	<div id="container">
+		
+		
+		
+	    
+
+	<form action="/configurations" class="large-form" method="post">
+       <fieldset>
+			<legend>System Configuration Items</legend>
+		<div id="configNavigation">
+				<b>Basic Settings</b> <b><a href="/header_images">Client Specific Settings</a></b>
+		</div>
+			
+		<div id="group_name_long">
+				<label>Group Name Long</label>
+			
+			<input class="inputBox" id="configuration_group_name_long" name="configuration[group_name_long]" size="30" type="text" value="Sugar Creek Baptist Church" />
+		</div>	 
+		<div id="group_name_short"> 
+				<label>Group Name Short</label>
+			<input class="inputBox" id="configuration_group_name_short" name="configuration[group_name_short]" size="30" type="text" value="Sugar Creek" />
+		</div>
+		<div id="short_title"> 
+		
+				
+	
+	<label>Use Short Name</label>
+	<select id="configuration[group_name_short]"  name="configuration[group_name_short]">
+			
+				<option value="true" >true</option>
+				<option value="false" selected="selected">false</option>
+			
+	</select>
+		</div>
+		<div id="default_search_time">
+				<label>Default Search Time</label>
+			
+			<select id="configuration_default_search_time" name="configuration[default_search_time]"><option value="last 30 days">last 30 days</option>
+<option value="month">month</option>
+<option value="week" selected="selected">week</option>
+<option value="day">day</option></select>
+		</div>
+		<fieldset>
+			<legend>Security Settings</legend>
+		<div id="view_requests_require_login">
+
+		</div>
+		<div id="new_updates_comments_require_login">
+					
+	
+	<label>New Updates Comments Require Login</label>
+	<select id="configuration[new_updates_comments_require_login]"  name="configuration[new_updates_comments_require_login]">
+			
+				<option value="true" >true</option>
+				<option value="false" selected="selected">false</option>
+			
+	</select>
+		</div>
+		</fieldset>
+		<div id="show_latest_update">
+					
+	
+	<label>Show Latest Update</label>
+	<select id="configuration[show_latest_update]"  name="configuration[show_latest_update]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+		</div>
+		<fieldset>
+			<legend>Request Features</legend>
+		<div id="requests">
+			<div id="age">
+					
+	
+	<label>Display Age</label>
+	<select id="configuration[requests_age-display]"  name="configuration[requests_age-display]">
+			
+				<option value="true" >true</option>
+				<option value="false" selected="selected">false</option>
+			
+	</select>
+					
+	
+	<label>Age Required</label>
+	<select id="configuration[requests_age-required]"  name="configuration[requests_age-required]">
+			
+				<option value="true" >true</option>
+				<option value="false" selected="selected">false</option>
+			
+	</select>
+			</div>
+				<div id="group_relationship">
+							
+	
+	<label>Enable Specifying Requestor's Relationship to Group</label>
+	<select id="configuration[requests_group_relationship]"  name="configuration[requests_group_relationship]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+				</div>
+		</div>
+		</fieldset>
+		<fieldset>
+			<legend>Encouragements</legend>
+		<div id="encouragements">
+			<div id="address">
+						
+	
+	<label>Display Encouragement Address</label>
+	<select id="configuration[requests_encouragement_address-display]"  name="configuration[requests_encouragement_address-display]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+						
+	
+	<label>Require Encouragement Address</label>
+	<select id="configuration[requests_encouragement_address-required]"  name="configuration[requests_encouragement_address-required]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+
+			</div>
+			<div id="phone">
+						
+	
+	<label>Display Encouragement Phone</label>
+	<select id="configuration[requests_encouragement_phone-display]"  name="configuration[requests_encouragement_phone-display]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+						
+	
+	<label>Require Encouragement Phone</label>
+	<select id="configuration[requests_encouragement_phone-required]"  name="configuration[requests_encouragement_phone-required]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+			</div>
+			<div id="email">
+						
+	
+	<label>Display Encouragement Email</label>
+	<select id="configuration[requests_encouragement_email-display]"  name="configuration[requests_encouragement_email-display]">
+			
+				<option value="true" >true</option>
+				<option value="false" selected="selected">false</option>
+			
+	</select>
+						
+	
+	<label>Require Encouragement Email</label>
+	<select id="configuration[requests_encouragement_email-required]"  name="configuration[requests_encouragement_email-required]">
+			
+				<option value="true" >true</option>
+				<option value="false" selected="selected">false</option>
+			
+	</select>
+			</div>
+			
+			<div id="encouragement">
+					
+	
+	<label>Enable Per-Request Encouragements</label>
+	<select id="configuration[requests_encouragement]"  name="configuration[requests_encouragement]">
+			
+			<option value="true" selected="selected">true</option>
+			<option value="false">false</option>
+			
+	</select>
+			</div>
+			
+		
+		
+				
+		</div>
+		</fieldset>
+		
+		<div id="controller">
+			<div id="layout">
+				<label>Default Controller Layout</label>
+				<input class="inputBox" id="configuration_controller_layout" name="configuration[controller_layout]" size="30" type="text" value="application" /> 
+			</div>
+		</div>
+		<fieldset>
+			<legend> Email Features</legend>
+		<div id="email">
+			<div id="mailer_from">
+			<label>Mailer From</label>
+				<input class="inputBox" id="configuration_mailer_from" name="configuration[mailer_from]" size="30" type="text" value="no-reply@liftprayer.net" /> 
+			</div>
+			<div id="mailer_subject_confirm_registration">
+					<label>Mailer Subject Confirm Registration</label>
+					<input class="inputBox" id="configuration_mailer_subject_confirm_registration" name="configuration[mailer_subject_confirm_registration]" size="30" type="text" value="Prayer Ministry Registration Confirmation" /> 
+			</div>
+			<div id="mailer_subject_lost_password"> 
+					<label>Mailer Subject Lost Password</label>
+				<input class="inputBox" id="configuration_mailer_subject_lost_password" name="configuration[mailer_subject_lost_password]" size="30" type="text" value="Prayer Ministry - Your new password." /> 
+			</div>
+			<div id="contact_us_emails">
+				<label>Contact Us Emails</label>
+				<input class="inputBox" id="configuration_contact_us_emails" name="configuration[contact_us_emails]" size="30" type="text" value="webmaster@sugarcreek.net, prayer@sugarcreek.net" /> 
+			</div>
+			<div id="encouragment_processing_email">
+					<label>Encouragement Processing Email</label>
+					<input class="inputBox" id="configuration_encouragement_processing_email" name="configuration[encouragement_processing_email]" size="30" type="text" value="pkohlenberg@gmail.com" /> 
+			</div>
+			
+		</div>
+		</fieldset>
+		
+		<div id="timezone">
+			<div id="default_timezone">
+					<label>Default Timezone</label>
+
+					<select id="configuration_default_timezone" name="configuration[default_timezone]"><option value="International Date Line West">(GMT-11:00) International Date Line West</option>
+<option value="Midway Island">(GMT-11:00) Midway Island</option>
+<option value="Samoa">(GMT-11:00) Samoa</option>
+<option value="Hawaii">(GMT-10:00) Hawaii</option>
+<option value="Alaska">(GMT-09:00) Alaska</option>
+<option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+<option value="Tijuana">(GMT-08:00) Tijuana</option>
+<option value="Arizona">(GMT-07:00) Arizona</option>
+<option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+<option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+<option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+<option value="Central America">(GMT-06:00) Central America</option>
+<option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+<option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+<option value="Mexico City">(GMT-06:00) Mexico City</option>
+<option value="Monterrey">(GMT-06:00) Monterrey</option>
+<option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+<option value="Bogota">(GMT-05:00) Bogota</option>
+<option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+<option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+<option value="Lima">(GMT-05:00) Lima</option>
+<option value="Quito">(GMT-05:00) Quito</option>
+<option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
+<option value="Caracas">(GMT-04:00) Caracas</option>
+<option value="La Paz">(GMT-04:00) La Paz</option>
+<option value="Santiago">(GMT-04:00) Santiago</option>
+<option value="Newfoundland">(GMT-03:30) Newfoundland</option>
+<option value="Brasilia">(GMT-03:00) Brasilia</option>
+<option value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
+<option value="Georgetown">(GMT-03:00) Georgetown</option>
+<option value="Greenland">(GMT-03:00) Greenland</option>
+<option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+<option value="Azores">(GMT-01:00) Azores</option>
+<option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+<option value="Casablanca">(GMT) Casablanca</option>
+<option value="Dublin">(GMT) Dublin</option>
+<option value="Edinburgh">(GMT) Edinburgh</option>
+<option value="Lisbon">(GMT) Lisbon</option>
+<option value="London">(GMT) London</option>
+<option value="Monrovia">(GMT) Monrovia</option>
+<option value="Amsterdam">(GMT+01:00) Amsterdam</option>
+<option value="Belgrade">(GMT+01:00) Belgrade</option>
+<option value="Berlin">(GMT+01:00) Berlin</option>
+<option value="Bern">(GMT+01:00) Bern</option>
+<option value="Bratislava">(GMT+01:00) Bratislava</option>
+<option value="Brussels">(GMT+01:00) Brussels</option>
+<option value="Budapest">(GMT+01:00) Budapest</option>
+<option value="Copenhagen">(GMT+01:00) Copenhagen</option>
+<option value="Ljubljana">(GMT+01:00) Ljubljana</option>
+<option value="Madrid">(GMT+01:00) Madrid</option>
+<option value="Paris">(GMT+01:00) Paris</option>
+<option value="Prague">(GMT+01:00) Prague</option>
+<option value="Rome">(GMT+01:00) Rome</option>
+<option value="Sarajevo">(GMT+01:00) Sarajevo</option>
+<option value="Skopje">(GMT+01:00) Skopje</option>
+<option value="Stockholm">(GMT+01:00) Stockholm</option>
+<option value="Vienna">(GMT+01:00) Vienna</option>
+<option value="Warsaw">(GMT+01:00) Warsaw</option>
+<option value="West Central Africa">(GMT+01:00) West Central Africa</option>
+<option value="Zagreb">(GMT+01:00) Zagreb</option>
+<option value="Athens">(GMT+02:00) Athens</option>
+<option value="Bucharest">(GMT+02:00) Bucharest</option>
+<option value="Cairo">(GMT+02:00) Cairo</option>
+<option value="Harare">(GMT+02:00) Harare</option>
+<option value="Helsinki">(GMT+02:00) Helsinki</option>
+<option value="Istanbul">(GMT+02:00) Istanbul</option>
+<option value="Jerusalem">(GMT+02:00) Jerusalem</option>
+<option value="Kyev">(GMT+02:00) Kyev</option>
+<option value="Minsk">(GMT+02:00) Minsk</option>
+<option value="Pretoria">(GMT+02:00) Pretoria</option>
+<option value="Riga">(GMT+02:00) Riga</option>
+<option value="Sofia">(GMT+02:00) Sofia</option>
+<option value="Tallinn">(GMT+02:00) Tallinn</option>
+<option value="Vilnius">(GMT+02:00) Vilnius</option>
+<option value="Baghdad">(GMT+03:00) Baghdad</option>
+<option value="Kuwait">(GMT+03:00) Kuwait</option>
+<option value="Moscow">(GMT+03:00) Moscow</option>
+<option value="Nairobi">(GMT+03:00) Nairobi</option>
+<option value="Riyadh">(GMT+03:00) Riyadh</option>
+<option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
+<option value="Volgograd">(GMT+03:00) Volgograd</option>
+<option value="Tehran">(GMT+03:30) Tehran</option>
+<option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
+<option value="Baku">(GMT+04:00) Baku</option>
+<option value="Muscat">(GMT+04:00) Muscat</option>
+<option value="Tbilisi">(GMT+04:00) Tbilisi</option>
+<option value="Yerevan">(GMT+04:00) Yerevan</option>
+<option value="Kabul">(GMT+04:30) Kabul</option>
+<option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
+<option value="Islamabad">(GMT+05:00) Islamabad</option>
+<option value="Karachi">(GMT+05:00) Karachi</option>
+<option value="Tashkent">(GMT+05:00) Tashkent</option>
+<option value="Chennai">(GMT+05:30) Chennai</option>
+<option value="Kolkata">(GMT+05:30) Kolkata</option>
+<option value="Mumbai">(GMT+05:30) Mumbai</option>
+<option value="New Delhi">(GMT+05:30) New Delhi</option>
+<option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+<option value="Almaty">(GMT+06:00) Almaty</option>
+<option value="Astana">(GMT+06:00) Astana</option>
+<option value="Dhaka">(GMT+06:00) Dhaka</option>
+<option value="Novosibirsk">(GMT+06:00) Novosibirsk</option>
+<option value="Sri Jayawardenepura">(GMT+06:00) Sri Jayawardenepura</option>
+<option value="Rangoon">(GMT+06:30) Rangoon</option>
+<option value="Bangkok">(GMT+07:00) Bangkok</option>
+<option value="Hanoi">(GMT+07:00) Hanoi</option>
+<option value="Jakarta">(GMT+07:00) Jakarta</option>
+<option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+<option value="Beijing">(GMT+08:00) Beijing</option>
+<option value="Chongqing">(GMT+08:00) Chongqing</option>
+<option value="Hong Kong">(GMT+08:00) Hong Kong</option>
+<option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+<option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
+<option value="Perth">(GMT+08:00) Perth</option>
+<option value="Singapore">(GMT+08:00) Singapore</option>
+<option value="Taipei">(GMT+08:00) Taipei</option>
+<option value="Ulaan Bataar">(GMT+08:00) Ulaan Bataar</option>
+<option value="Urumqi">(GMT+08:00) Urumqi</option>
+<option value="Osaka">(GMT+09:00) Osaka</option>
+<option value="Sapporo">(GMT+09:00) Sapporo</option>
+<option value="Seoul">(GMT+09:00) Seoul</option>
+<option value="Tokyo">(GMT+09:00) Tokyo</option>
+<option value="Yakutsk">(GMT+09:00) Yakutsk</option>
+<option value="Adelaide">(GMT+09:30) Adelaide</option>
+<option value="Darwin">(GMT+09:30) Darwin</option>
+<option value="Brisbane">(GMT+10:00) Brisbane</option>
+<option value="Canberra">(GMT+10:00) Canberra</option>
+<option value="Guam">(GMT+10:00) Guam</option>
+<option value="Hobart">(GMT+10:00) Hobart</option>
+<option value="Melbourne">(GMT+10:00) Melbourne</option>
+<option value="Port Moresby">(GMT+10:00) Port Moresby</option>
+<option value="Sydney">(GMT+10:00) Sydney</option>
+<option value="Vladivostok">(GMT+10:00) Vladivostok</option>
+<option value="Magadan">(GMT+11:00) Magadan</option>
+<option value="New Caledonia">(GMT+11:00) New Caledonia</option>
+<option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
+<option value="Auckland">(GMT+12:00) Auckland</option>
+<option value="Fiji">(GMT+12:00) Fiji</option>
+<option value="Kamchatka">(GMT+12:00) Kamchatka</option>
+<option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
+<option value="Wellington">(GMT+12:00) Wellington</option>
+<option value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option><option value="" disabled="disabled">-------------</option>
+</select>
+			</div>
+		</div>
+		
+	
+	  <input name="commit" type="submit" value="Update" /> 
+	<input name="commit" type="submit" value="Back" />
+	</fieldset>
+	</form>	
+  <p>
+  
+  </p>
+
+	<div style="display:none">
+		<h1>Add New Property</h2>
+
+			<form action="/configurations/new" id="new_config" method="get">
+			  <p>Name: <input id="configuration_name" name="configuration[name]" size="30" type="text" /></p>
+			  <p>Value:<input id="configuration_value" name="configuration[value]" size="30" type="text" /></p>
+			   <p>
+			    <input disabled="disabled" id="configuration_create" name="commit" type="submit" value="Create" />
+			  </p>
+			</form>
+			
+			<script type="text/javascript">
+//<![CDATA[
+new Form.EventObserver('new_config', function(element, value) { name_val = value.split('&')[0]; name = name_val.split('=')[1];   val_val = value.split('&')[1]; val = val_val.split('=')[1]; if(!name == '' && !val=='') {$('configuration_create').enable();}else{$('configuration_create').disable();} })
+//]]>
+</script>
+				
+	
+		
+		
+	</div>
+	</div>
+	<div id="footer">
+		<div id="footer-top"></div>
+		<div id="footer-body">
+			<div id="footer-body-content">
+				<p>LiftPrayer.net is a ministry of <a href="http://www.sugarcreek.net">Sugar Creek Baptist Church</a>. 
+				&copy;2007 Sugar Creek Baptist Church. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1197684-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</html>

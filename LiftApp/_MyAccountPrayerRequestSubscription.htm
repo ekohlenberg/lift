@@ -1,0 +1,9 @@
+<div id="subscription<%=request_id%>" class="mySubscription">
+	<h4><a class="delete-sml" href="#" onclick="if (confirm('<%=unsubscribe_subscription_confirmation%>')) { Element.show('midSpinner1'); new Ajax.Request('<%=app_path%>DeleteSubscription.aspx?id=<%=request_id%>', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('midSpinner1')}}); }; return false;" title="<%=unsubscribe_subscription_caption%>"><img alt="Icon-sml-delete" src="images/layout/icon-sml-delete.gif?1238205534" /></a> 
+	<a class="blueLink" href="<%=app_path%>EditRequest.aspx?id=<%=request_id%>" ><%=request_title%></a></h4>
+	<p>
+		<span class="rightAlignedSmall"><strong><%=subscription_last_activity%>:</strong> <%=last_activity_label%></span>
+		<span class="leftAlignedSmall"><%=total_comments_label%></span>
+	</p>
+</div>
+
