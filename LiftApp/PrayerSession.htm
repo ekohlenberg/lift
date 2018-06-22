@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sugar Creek Baptist Church - Prayer Requests</title>
+    <script src="/javascripts/prototype.js" type="text/javascript"></script>
+    <script src="/javascripts/effects.js" type="text/javascript"></script>
+    <script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+    <script src="/javascripts/controls.js" type="text/javascript"></script>
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+    <script src="/javascripts/swfobject.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/form.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/custom-default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/custom-scbc.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+  <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link href="http://localhost:3000/request/rss" rel="alternate" title="RSS" type="application/rss+xml" />
+  </head>
+  <body id="watchman">
+    <div>
+      <img id="staticSpinner" src="/images/staticspinner.gif" alt="" width="100" height="25" style="display: none;"/>
+    </div>
+    <div id="page">
+      <div id="header">
+        <div id="header-top">
+          <div id="header-top-right">
+            <div id="userDetail">
+              <h3 class="userInfo">
+                                  Eric Kohlenberg (<a href="/login/logout">Log Out</a>)
+                                <span class="pipe">|</span><a href="/help" class="">Help</a>
+                <span class="pipe">|</span><a href="/contact" class="">Contact Us</a>
+                                  <br />My Prayer Time: <strong>East Wall, Thursday-4:00 AM</strong>
+                              </h3>
+            </div>
+          </div>
+        </div>
+        <div id="header-center">
+          <div id="header-center-top"></div>
+          <div id="header-center-center">
+            
+            <img alt="Lift_banner1" src="/images/LIFT_Banner1.jpg?1217084103" />
+          </div>
+          <div id="header-center-bottom">			
+            <ul class="leftAlignedNav">
+              <li class="addButton"><a href="/request/new"  ><img src='/images/plus-green-sml.gif' alt='' />Add Prayer Request</a></li>
+              
+                          </ul>
+            
+            
+            <ul class="rightAlignedNav">
+              <li><a href="/request"  >Prayer Requests</a></li>
+              <li><a href="/prayersession" class="active" title="An online prayer helper">Prayer Session</a></li>
+              <li><a href="/wall"  title="Sign up or change your prayer hour">Watchman Wall</a></li>
+              
+                              <li><a href="/account" >My Account</a></li>
+              
+                              
+                                  <li><a href="/admin" >Administration</a></li>
+                                                                            
+            </ul>
+          </div>
+          <div class="head-info"></div>
+        </div>
+      </div>
+      
+      <div id="container">
+        
+        
+        
+        <h1>New prayer session</h1>
+<img id="spinner" src="/images/spinner.gif" style="display: none;" />
+<div><h3>Viewing prayer request <span id="currentRequestLabel"></span> of 60</h3></div>
+<div id="psHolder">
+  <div id="prayerSession">
+      <div id="psBody0" class="psSlider">
+      <h3>Welcome to your prayer session</h3>
+      <p>
+         You will be presented with a new prayer request every 60 seconds for a maximum of 60 prayer requests.</br>
+         If at anytime you want to pause the session, you may do so with the button below. You may also manually navigate 
+         through the requests using the buttons below. You can create notes about this session in the box provided below.  These
+         notes will be automatically saved to your session for later review.  When you are ready to begin, press the play button below.  When you 
+         have finished, simply click "End Session".  Thank you.
+      </p>
+  </div>
+  </div>
+  <div id="psControls">
+      <a id="psPrevLink" title="view previous prayer request" class="psLinkInactive" href="javascript:void(0);" onclick="getPrevRequest()"><span>Previous</span></a>
+	  <a id="psPlayPause" href="javascript:void(0);" title="begin session" onclick="beginNewSession()" style="background-position: right top;"><span>Play/Pause</span></a>
+      <a class="psLinkActive" id="psNextLink" href="javascript:void(0);" title="view next prayer request" onclick="getNextRequest()"><span>Next</span></a>
+  </div> 
+  
+  <div id="psProgressHolder"><div id="psProgress"></div></div>
+
+<form action="/prayersession/end_session/" method="post" name="psNotesForm" class="large-form" id="psNotesForm" style="width: 670px;">
+  <fieldset>
+  	<span id="noteSaving" style="display: none;">saving...</span>
+    <legend>Notes</legend>
+    <div>
+        <label for="notesArea" accesskey="1">Your Notes</label>
+        <textarea id="notesArea" name="notesArea" onblur="saveSessionNote()" rows="15" cols="60" class="inputBox tall"></textarea>
+    </div>
+    <input name="endSession" type="hidden" value="true"/>
+    <input class="submitBtn" name="submit" type="submit" value="End Session" id="commentSubmit" />
+  </fieldset>
+</form>
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  startPrayerRequestTimer();
+</script>
+      </div>
+      
+      <div id="footer">
+        <div id="footer-top"></div>
+        <div id="footer-body">
+          <div id="footer-body-content">
+            <p>LiftPrayer.net is a ministry of <a href="http://www.sugarcreek.net">Sugar Creek Baptist Church</a>. 
+            &copy;2007 Sugar Creek Baptist Church. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  
+</html>

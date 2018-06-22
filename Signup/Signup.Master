@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Signup.master.cs" Inherits="Signup.Signup" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="container">
+        <div id="masthead">
+			<h1>LiftPrayer</h1>
+
+			
+		</div>
+		<!-- / masthead -->
+	
+		
+		<!--
+				<div id="navigation">
+			<ol>
+				
+				<li>
+					<a href="/Main/">
+						<span style="font-weight: bold; font-size: 110%;">Home</span>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="/Main/prayer-ministry/">
+						<span style="font-weight: bold; font-size: 110%;">Prayer Ministry</span>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="/Main/about/">
+						<span style="font-weight: bold; font-size: 110%;">About Lift</span>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="/Main/contact-us/">
+						<span style="font-weight: bold; font-size: 110%;">Contact Us</span>
+					</a>
+				</li>
+				
+							</ol>
+			
+			<div class="search">
+				<form method="get" id="search_form" action="/Main/search/">
+					<input type="image" src='/Main/files/themes/default/images/btn_search.png' class="submit" alt="Search" />
+					<input type="text" class="search_input" value="Search this site" name="q" id="q" onfocus="if (this.value == 'Search this site') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this site';}" />
+					<input type="hidden" id="searchsubmit" value="Search" />
+				</form>
+			</div>
+		</div>
+		
+		-->
+		
+					
+		
+
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+     </asp:ContentPlaceHolder>
+     
+</div>
+</body>
+</html>

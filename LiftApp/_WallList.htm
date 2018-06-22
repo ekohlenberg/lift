@@ -1,0 +1,32 @@
+<div class="adminListRow">
+	    <a href="WallDelete.aspx?id=<%=id%>" class="adminDeleteForm" onclick="return confirm('<%=wall.are_you_sure_you_want_to_delete%>  <%=wall.all_users_unsubscribed%>');"><%=wall.delete%></a>
+	<a href="WallManage.aspx?initial=<%=id%>" class="adminMainActionLink"><%=wall.manage_this_wall%></a>
+	<div>
+		<h2><span class="in_place_editor_field" id="wall_title_<%=id%>_in_place_editor"><%=title%></span><script type="text/javascript">
+                                                       //<![CDATA[
+                                                       new Ajax.InPlaceEditor('wall_title_<%=id%>_in_place_editor', 'InPlaceEditWallTitleUpdate.aspx?id=<%=id%>')
+                                                       //]]>
+</script></h2>
+	</div>
+	<br />
+	<p class="adminText"><strong><%=wall.wall_leader%></strong>:
+		<span id="user_name_<%=id%>">
+							<%=first_name%> <%=last_name%>
+		</span>
+		<a href="#" class="adminActionLink" 
+
+onclick="myWallManager.findNewWallLeader('<%=id%>', this); return false;"><%=wall.change%></a>
+	</p>
+	<div class="showhidedialog" id="edit_item_<%=id%>" style="display: none;">
+		<input type="text" name="wall_leader[user]" value="" id="wall_leader_user_<%=id%>"> 
+		<a href="#" onclick="myWallManager.cancel();" 
+
+class="adminActionLink"><%=wall.cancel%></a>
+		<div id="searchResults_<%=id%>" class="wallLeaderAutoComplete">
+			<p>
+				<%=wall.start_typing%>  <%=wall.once_we_find_them%>	
+			</p>
+		</div>
+	</div>
+	
+</div>

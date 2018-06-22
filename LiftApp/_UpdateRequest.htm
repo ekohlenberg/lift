@@ -1,0 +1,16 @@
+   <div id="comment_<%=id%>"class="comment alternateRow1">
+		<!--	<a class="delete-sml" href="#" onclick="if (confirm('are you sure you want to delete this comment?')) { deletingCommentPrep(this, &quot;commentSpinner1135&quot;); new Ajax.Request('/request/delete_encouragement/1135', {asynchronous:true, evalScripts:true}); }; return false;">delete</a> -->
+		
+        <span class="commentHead">
+                <%=enc_awaiting_approval%>
+				<span class="update_emphasize"><%=enc_type_name%>:</span>
+			<%=enc_about_time%> | <strong><%=enc_from%> said...</strong>
+			</span>
+        <p>
+				<%=note_markup%>
+			
+        </p>
+		
+		<img src="/images/spinner-small.gif" class= "commentSpinner" id="commentSpinner1135" style="display: none;"  />
+    </div>
+    

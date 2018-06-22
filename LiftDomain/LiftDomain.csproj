@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A15CB0C-ED78-45E9-9163-349161DB9011}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiftDomain</RootNamespace>
+    <AssemblyName>LiftDomain</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appt.cs" />
+    <Compile Include="Appt.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Appt.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseLiftDomain.cs" />
+    <Compile Include="BaseLiftReport.cs" />
+    <Compile Include="ConfirmedWatchmenReport.cs" />
+    <Compile Include="Day.cs" />
+    <Compile Include="Encouragement.cs" />
+    <Compile Include="Encouragement.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Encouragement.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="EngineSchemaInf.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupRelationshipType.cs" />
+    <Compile Include="GroupsRole.cs" />
+    <Compile Include="GroupsUser.cs" />
+    <Compile Include="HeaderImage.cs" />
+    <Compile Include="Increment.cs" />
+    <Compile Include="LangProperty.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LiftContext.cs" />
+    <Compile Include="LiftTime.cs" />
+    <Compile Include="Organization.cs" />
+    <Compile Include="Organization.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Organization.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OrgEmail.cs" />
+    <Compile Include="Phrase.cs" />
+    <Compile Include="PhraseProperty.cs" />
+    <Compile Include="Prayersession.cs" />
+    <Compile Include="Prayersession.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prayersession.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RailmailDeliverie.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Request.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestReport.cs" />
+    <Compile Include="RequestType.cs" />
+    <Compile Include="RequestType.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestType.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs" />
+    <Compile Include="Role.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Role.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RolesStaticPermission.cs" />
+    <Compile Include="RolesUser.cs" />
+    <Compile Include="RolesUser.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RolesUser.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaMigration.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SimpleCaptchaDat.cs" />
+    <Compile Include="StaticPermission.cs" />
+    <Compile Include="Subscription.cs" />
+    <Compile Include="Subscription.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Subscription.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="User.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User.template.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs" />
+    <Compile Include="UserTimeProperty.cs" />
+    <Compile Include="Wall.cs" />
+    <Compile Include="Wall.template.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Wall.template.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LiftCommon\LiftCommon.csproj">
+      <Project>{1F52602E-5F2C-486D-B7F9-EB75E2D37081}</Project>
+      <Name>LiftCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Appt.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Appt.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encouragement.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Encouragement.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organization.template.resx">
+      <LastGenOutput>Organization.template.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prayersession.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Prayersession.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Request.template.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestType.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RequestType.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Role.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Role.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RolesUser.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RolesUser.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Subscription.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>User.template.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wall.template.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Wall.template.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

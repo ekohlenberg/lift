@@ -1,0 +1,3141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sugar Creek Baptist Church - Prayer Requests</title>
+    <script src="/javascripts/prototype.js" type="text/javascript"></script>
+    <script src="/javascripts/effects.js" type="text/javascript"></script>
+    <script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+    <script src="/javascripts/controls.js" type="text/javascript"></script>
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+    <script src="/javascripts/swfobject.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/bak/stylesheets/master.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/bak/stylesheets/form.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/bak/stylesheets/custom-default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/bak/stylesheets/custom-scbc.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/bak/stylesheets/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+  <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link href="http://sugarcreek.liftprayer.net/request/rss" rel="alternate" title="RSS" type="application/rss+xml" />
+  </head>
+  
+  <!--add existing user live search-->
+<script type="text/javascript">
+    //<![CDATA[
+    var myWalladmin = new walladmin();
+    //]]>
+</script>
+  <body id="watchman">
+    <div>
+      <img id="staticSpinner" src="/images/staticspinner.gif" alt="" width="100" height="25" style="display: none;"/>
+    </div>
+    <div id="page">
+      <div id="header">
+        <div id="header-top">
+          <div id="header-top-right">
+            <div id="userDetail">
+              <h3 class="userInfo">
+                                  Eric Kohlenberg (<a href="/login/logout">Log Out</a>)
+                                <span class="pipe">|</span><a href="/help" class="">Help</a>
+                <span class="pipe">|</span><a href="/contact" class="">Contact Us</a>
+                                  <br />My Prayer Time: <strong>East Wall, Friday-1:00 AM</strong>
+                              </h3>
+            </div>
+          </div>
+        </div>
+        <div id="header-center">
+          <div id="header-center-top"></div>
+          <div id="header-center-center">
+            
+            <img alt="Lift_banner1" src="/images/LIFT_Banner1.jpg?1238205534" />
+          </div>
+          <div id="header-center-bottom">			
+            <ul class="leftAlignedNav">
+              <li class="addButton"><a href="/request/new"  ><img src='/images/plus-green-sml.gif' alt='' />Add Prayer Request</a></li>
+              <li><a href="/admin/emails" title="Sent an email to all wall members. You will be prompted for the message contents.">Email this Wall</a></li>
+<li><a href="/wall/notify_all_wall_slots/1" onclick="return confirm('Email will be sent to all users assigned to this wall with their time and contact information of the next watchman.  Would you like to continue?');" title="Email all wall users with their time and next watchman contact info.">Send Time Reminders</a>
+
+            </ul>
+            
+            
+            <ul class="rightAlignedNav">
+              <li><a href="/request"  >Prayer Requests</a></li>
+              <li><a href="/prayersession"  title="An online prayer helper">Prayer Session</a></li>
+              <li><a href="/wall"  title="Sign up or change your prayer hour">Watchman Wall</a></li>
+              
+                              <li><a href="/account" >My Account</a></li>
+              
+                              
+                                  <li><a href="/admin" >Administration</a></li>
+                                                                            
+            </ul>
+          </div>
+          <div class="head-info"></div>
+        </div>
+      </div>
+      <div id="container">
+        
+        
+        
+        
+
+
+<h1>North Wall - <span id="wallLabel" class="highlite">Whole Day</span></h1>
+<div class="rule">
+    <hr />
+</div>
+
+<select id="wall_id" name="wall[id]" onchange="document.location = '/wall/dashboard/' + $F('wall_id')"><option value="1" selected="selected">North Wall</option>
+<option value="2">South Wall</option>
+<option value="3">East Wall</option>
+<option value="4">West Wall</option>
+<option value="5">Northeast Wall</option></select>
+
+<div id="alertHolder">
+	<div id="changedUsers" style="display: none;">
+		<span id="changedUsersInfo">Users have been moved to new positions...</span>
+		<form action="/wall/notify_changed/1" method="post" accept-charset="utf-8">
+			<input type="hidden" name="user_array" value="" id="changed_user_array">
+			<input type="submit" value="Notify Users">
+		</form>
+		<div id="reviewList" style="display: none;"></div>
+	</div>
+	<div id="undo" style="display: none;">
+		<span id="undoInfo"></span>
+		<a href="#" onclick="myWalladmin.undo(); return false;"> Undo </a>
+	</div>
+</div>
+<div class="cleaner"></div>
+<div id="incrementSlots">
+
+	<table border="0" cellpadding="0" cellspacing="0" class="watchmanWall">
+    <tr class="daysOfWeek">
+        <td class="noBg">&nbsp;</td>
+        
+			<td>Sunday</td>
+        
+			<td>Monday</td>
+        
+			<td>Tuesday</td>
+        
+			<td>Wednesday</td>
+        
+			<td>Thursday</td>
+        
+			<td>Friday</td>
+        
+			<td>Saturday</td>
+        
+    </tr>
+      
+		<!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >6:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_827" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_40" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">B. McSweeney</span>
+					<br />
+					<span class="userTimeInfo">Sunday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_683" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_339" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Castillo</span>
+					<br />
+					<span class="userTimeInfo">Monday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_707" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_426" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Peralta</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_731" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_424" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Higgins</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_755" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_187" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">P. Geary</span>
+					<br />
+					<span class="userTimeInfo">Thursday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_779" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_207" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Cheney</span>
+					<br />
+					<span class="userTimeInfo">Friday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_803" class="timeSlot" title="6:00 AM / 6:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 6:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_199" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Kyle</span>
+					<br />
+					<span class="userTimeInfo">Saturday 6:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >7:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_804" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Sunday 7:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_828" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 7:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_89" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">C. Howard</span>
+					<br />
+					<span class="userTimeInfo">Monday 7:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_684" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 7:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_379" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Moritz</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 7:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_708" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 7:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_360" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Hartman</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 7:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_732" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Thursday 7:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_756" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 7:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_254" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Halle</span>
+					<br />
+					<span class="userTimeInfo">Friday 7:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_780" class="timeSlot" title="7:00 AM / 7:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Saturday 7:00 AM</span>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >8:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_805" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 8:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_576" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Crain</span>
+					<br />
+					<span class="userTimeInfo">Sunday 8:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_829" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 8:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_141" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Mercado</span>
+					<br />
+					<span class="userTimeInfo">Monday 8:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_685" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 8:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_709" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 8:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_259" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Stinger</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 8:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_733" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 8:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_102" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">T. Craig</span>
+					<br />
+					<span class="userTimeInfo">Thursday 8:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_757" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 8:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_431" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Fisher</span>
+					<br />
+					<span class="userTimeInfo">Friday 8:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_781" class="timeSlot" title="8:00 AM / 8:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 8:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_166" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Pascaretta</span>
+					<br />
+					<span class="userTimeInfo">Saturday 8:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >9:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_806" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 9:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_653" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Moreno</span>
+					<br />
+					<span class="userTimeInfo">Sunday 9:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_830" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 9:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_408" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Pearlnath</span>
+					<br />
+					<span class="userTimeInfo">Monday 9:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_686" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 9:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_710" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 9:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_691" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Wyatt</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 9:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_734" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Thursday 9:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_758" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 9:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_282" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Blazek</span>
+					<br />
+					<span class="userTimeInfo">Friday 9:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_782" class="timeSlot" title="9:00 AM / 9:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 9:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_13" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Lozano</span>
+					<br />
+					<span class="userTimeInfo">Saturday 9:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >10:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_807" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Sunday 10:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_831" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 10:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_687" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 10:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_542" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">F. Veerman</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 10:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_711" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 10:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_30" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Wetch</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 10:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_735" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 10:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_162" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">E. Apel</span>
+					<br />
+					<span class="userTimeInfo">Thursday 10:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_759" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 10:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_494" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Nguyen</span>
+					<br />
+					<span class="userTimeInfo">Friday 10:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_783" class="timeSlot" title="10:00 AM / 10:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 10:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_258" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Spurk</span>
+					<br />
+					<span class="userTimeInfo">Saturday 10:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >11:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_808" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Sunday 11:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_832" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 11:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_688" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 11:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_353" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Compas</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 11:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_712" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 11:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_296" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Hartman</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 11:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_736" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 11:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_491" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Merritt</span>
+					<br />
+					<span class="userTimeInfo">Thursday 11:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_760" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 11:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_137" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Laitkep</span>
+					<br />
+					<span class="userTimeInfo">Friday 11:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_784" class="timeSlot" title="11:00 AM / 11:00 AM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 11:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_751" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Waldenmaier</span>
+					<br />
+					<span class="userTimeInfo">Saturday 11:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >12:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_809" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 12:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_222" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Hougham</span>
+					<br />
+					<span class="userTimeInfo">Sunday 12:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_833" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 12:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_689" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 12:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_131" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Greeson</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 12:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_713" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 12:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_817" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">T. Ball</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 12:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_737" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 12:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_205" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Wilson</span>
+					<br />
+					<span class="userTimeInfo">Thursday 12:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_761" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 12:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_506" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">T. Suddarth</span>
+					<br />
+					<span class="userTimeInfo">Friday 12:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_785" class="timeSlot" title="12:00 PM / 12:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 12:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_528" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">T. Singletary</span>
+					<br />
+					<span class="userTimeInfo">Saturday 12:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >1:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_810" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 1:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_50" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">B. Neal</span>
+					<br />
+					<span class="userTimeInfo">Sunday 1:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_834" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 1:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_690" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 1:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_86" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">C. Naizer</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 1:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_714" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 1:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_738" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Thursday 1:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_762" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 1:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_226" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">I. Prudhomme</span>
+					<br />
+					<span class="userTimeInfo">Friday 1:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_786" class="timeSlot" title="1:00 PM / 1:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 1:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_636" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Martin</span>
+					<br />
+					<span class="userTimeInfo">Saturday 1:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >2:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_811" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 2:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_898" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">s. zuniga</span>
+					<br />
+					<span class="userTimeInfo">Sunday 2:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_835" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 2:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_80" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">C. Passmore</span>
+					<br />
+					<span class="userTimeInfo">Monday 2:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_691" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 2:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_155" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Light</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 2:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_715" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 2:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_739" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 2:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_354" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. McFee</span>
+					<br />
+					<span class="userTimeInfo">Thursday 2:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_763" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 2:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_114" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Kettler</span>
+					<br />
+					<span class="userTimeInfo">Friday 2:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_787" class="timeSlot" title="2:00 PM / 2:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 2:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_647" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Merriman</span>
+					<br />
+					<span class="userTimeInfo">Saturday 2:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >3:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_812" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Sunday 3:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_836" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 3:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_240" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Giddens</span>
+					<br />
+					<span class="userTimeInfo">Monday 3:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_692" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 3:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_716" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 3:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_143" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Mullenax</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 3:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_740" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 3:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_370" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Martinez</span>
+					<br />
+					<span class="userTimeInfo">Thursday 3:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_764" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Friday 3:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_788" class="timeSlot" title="3:00 PM / 3:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Saturday 3:00 PM</span>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >4:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_813" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 4:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_692" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">F. Ziegler</span>
+					<br />
+					<span class="userTimeInfo">Sunday 4:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_837" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 4:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_897" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. McCaslin</span>
+					<br />
+					<span class="userTimeInfo">Monday 4:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_693" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 4:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_717" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 4:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_741" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 4:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_461" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Winborne</span>
+					<br />
+					<span class="userTimeInfo">Thursday 4:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_765" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 4:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_801" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Baker</span>
+					<br />
+					<span class="userTimeInfo">Friday 4:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_789" class="timeSlot" title="4:00 PM / 4:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 4:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_420" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Hall</span>
+					<br />
+					<span class="userTimeInfo">Saturday 4:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >5:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_814" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 5:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_307" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Boudreaux</span>
+					<br />
+					<span class="userTimeInfo">Sunday 5:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_838" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 5:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_309" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Langley</span>
+					<br />
+					<span class="userTimeInfo">Monday 5:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_694" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 5:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_718" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 5:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_742" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Thursday 5:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_766" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 5:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_24" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. McGee</span>
+					<br />
+					<span class="userTimeInfo">Friday 5:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_790" class="timeSlot" title="5:00 PM / 5:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Saturday 5:00 PM</span>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >6:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_815" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 6:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_130" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Finlay</span>
+					<br />
+					<span class="userTimeInfo">Sunday 6:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_839" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 6:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_695" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 6:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_150" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Pitcher</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 6:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_719" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 6:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_743" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 6:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_293" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Laitkep</span>
+					<br />
+					<span class="userTimeInfo">Thursday 6:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_767" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 6:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_671" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Roberts</span>
+					<br />
+					<span class="userTimeInfo">Friday 6:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_791" class="timeSlot" title="6:00 PM / 6:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 6:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_346" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Benzon</span>
+					<br />
+					<span class="userTimeInfo">Saturday 6:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >7:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_816" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 7:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_252" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Hammervold</span>
+					<br />
+					<span class="userTimeInfo">Sunday 7:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_840" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 7:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_540" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">W. Schumacher</span>
+					<br />
+					<span class="userTimeInfo">Monday 7:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_696" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 7:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_720" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 7:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_744" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 7:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_312" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Garcia</span>
+					<br />
+					<span class="userTimeInfo">Thursday 7:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_768" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 7:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_547" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Zuniga</span>
+					<br />
+					<span class="userTimeInfo">Friday 7:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_792" class="timeSlot" title="7:00 PM / 7:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Saturday 7:00 PM</span>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >8:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_817" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Sunday 8:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_841" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 8:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_697" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 8:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_721" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 8:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_359" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Phillips</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 8:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_745" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 8:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_218" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">H. Dawes</span>
+					<br />
+					<span class="userTimeInfo">Thursday 8:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_769" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 8:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_380" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">B. Morrow</span>
+					<br />
+					<span class="userTimeInfo">Friday 8:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_793" class="timeSlot" title="8:00 PM / 8:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 8:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_624" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Lambert</span>
+					<br />
+					<span class="userTimeInfo">Saturday 8:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >9:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_818" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Sunday 9:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_842" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 9:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_156" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Miller</span>
+					<br />
+					<span class="userTimeInfo">Monday 9:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_698" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Tuesday 9:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_722" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 9:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_235" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Baezner</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 9:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_746" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 9:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_195" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Gilbert</span>
+					<br />
+					<span class="userTimeInfo">Thursday 9:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_770" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 9:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_78" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">C. Gremillion</span>
+					<br />
+					<span class="userTimeInfo">Friday 9:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_794" class="timeSlot" title="9:00 PM / 9:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 9:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_406" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Irvin</span>
+					<br />
+					<span class="userTimeInfo">Saturday 9:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >10:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_819" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 10:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_325" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Griggs</span>
+					<br />
+					<span class="userTimeInfo">Sunday 10:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_843" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 10:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_866" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">r. hinshaw</span>
+					<br />
+					<span class="userTimeInfo">Monday 10:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_699" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 10:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_718" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Bovett</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 10:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_723" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 10:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_16" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Lilius</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 10:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_747" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 10:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_480" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Kwan</span>
+					<br />
+					<span class="userTimeInfo">Thursday 10:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_771" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Friday 10:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_795" class="timeSlot" title="10:00 PM / 10:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Saturday 10:00 PM</span>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >11:00 PM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_820" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 11:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_347" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Heckel</span>
+					<br />
+					<span class="userTimeInfo">Sunday 11:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_844" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 11:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_700" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 11:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_147" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Mercer</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 11:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_724" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 11:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_191" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">M. Kula</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 11:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_748" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 11:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_453" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Leffew</span>
+					<br />
+					<span class="userTimeInfo">Thursday 11:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_772" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Friday 11:00 PM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_796" class="timeSlot" title="11:00 PM / 11:00 PM UTC">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 11:00 PM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_537" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">W. Hector</span>
+					<br />
+					<span class="userTimeInfo">Saturday 11:00 PM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >12:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_677" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Monday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 12:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_316" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">B. Leick</span>
+					<br />
+					<span class="userTimeInfo">Sunday 12:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_701" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Tuesday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 12:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_725" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Wednesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 12:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_812" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">N. Howard</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 12:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_1182" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Thursday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 12:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_773" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Friday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Thursday 12:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_1181" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Saturday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 12:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_255" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Kirkham</span>
+					<br />
+					<span class="userTimeInfo">Friday 12:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_821" class="timeSlot" title="12:00 AM / 12:00 AM UTC (Sunday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Saturday 12:00 AM</span>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >1:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_678" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Monday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 1:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_220" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Fields</span>
+					<br />
+					<span class="userTimeInfo">Sunday 1:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_702" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Tuesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 1:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_185" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Evans</span>
+					<br />
+					<span class="userTimeInfo">Monday 1:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_1183" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Wednesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 1:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_828" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Ruger</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 1:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_750" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Thursday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Wednesday 1:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_774" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Friday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 1:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_616" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">G. Ivey</span>
+					<br />
+					<span class="userTimeInfo">Thursday 1:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_798" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Saturday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 1:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_290" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Ibitayo</span>
+					<br />
+					<span class="userTimeInfo">Friday 1:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_822" class="timeSlot" title="1:00 AM / 1:00 AM UTC (Sunday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 1:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_328" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Lanham</span>
+					<br />
+					<span class="userTimeInfo">Saturday 1:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >2:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_679" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Monday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 2:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_860" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">C. Hamilton</span>
+					<br />
+					<span class="userTimeInfo">Sunday 2:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_703" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Tuesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 2:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_845" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. De Jesus</span>
+					<br />
+					<span class="userTimeInfo">Monday 2:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_727" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Wednesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 2:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_273" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Ross</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 2:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_751" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Thursday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 2:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_397" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Smith</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 2:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_775" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Friday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 2:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_17" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">A. Ball</span>
+					<br />
+					<span class="userTimeInfo">Thursday 2:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_799" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Saturday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Friday 2:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_823" class="timeSlot" title="2:00 AM / 2:00 AM UTC (Sunday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 2:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_563" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">B. Bores</span>
+					<br />
+					<span class="userTimeInfo">Saturday 2:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >3:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_680" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Monday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_740" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Pollock</span>
+					<br />
+					<span class="userTimeInfo">Sunday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_704" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Tuesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_84" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">C. Caulkins</span>
+					<br />
+					<span class="userTimeInfo">Monday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_728" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Wednesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_864" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">J. Ross</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_752" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Thursday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_164" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">E. Chambers</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_776" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Friday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_369" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Volle</span>
+					<br />
+					<span class="userTimeInfo">Thursday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_800" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Saturday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_410" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">P. Ibitayo</span>
+					<br />
+					<span class="userTimeInfo">Friday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_824" class="timeSlot" title="3:00 AM / 3:00 AM UTC (Sunday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 3:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_670" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Riemersma</span>
+					<br />
+					<span class="userTimeInfo">Saturday 3:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >4:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_681" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Monday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_270" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Cunneff</span>
+					<br />
+					<span class="userTimeInfo">Sunday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_705" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Tuesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Monday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_727" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">b. parkman</span>
+					<br />
+					<span class="userTimeInfo">Monday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_729" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Wednesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_412" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">P. Hicks</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_753" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Thursday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_525" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Overstreet</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_777" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Friday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_124" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">D. Douglas</span>
+					<br />
+					<span class="userTimeInfo">Thursday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_801" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Saturday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_435" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Goolsby</span>
+					<br />
+					<span class="userTimeInfo">Friday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_825" class="timeSlot" title="4:00 AM / 4:00 AM UTC (Sunday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 4:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_423" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Higgins</span>
+					<br />
+					<span class="userTimeInfo">Saturday 4:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        <!--begin increment index row-->
+<tr>
+	<td class="timeColumn"><span >5:00 AM</span></td>
+	 
+	    
+        
+        
+		<td id="cell_682" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Monday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Sunday 5:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_686" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">R. Warns</span>
+					<br />
+					<span class="userTimeInfo">Sunday 5:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_706" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Tuesday)">
+			
+				<a class="addUser" title="add a new user to this slot" onclick="addNewUser(this);" href="javascript:void(0);"></a>
+				<span class="timeInfo">Monday 5:00 AM</span>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_730" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Wednesday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Tuesday 5:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_330" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">L. Mayberry</span>
+					<br />
+					<span class="userTimeInfo">Tuesday 5:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_754" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Thursday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Wednesday 5:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_477" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Johnson</span>
+					<br />
+					<span class="userTimeInfo">Wednesday 5:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_778" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Friday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Thursday 5:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_474" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Singer</span>
+					<br />
+					<span class="userTimeInfo">Thursday 5:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+	    
+        
+        
+		<td id="cell_802" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Saturday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Friday 5:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_697" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">K. Kyle</span>
+					<br />
+					<span class="userTimeInfo">Friday 5:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	 
+<script type="text/javascript">
+
+    function addNewUser(elt) {
+        myWallAdmin.newUserPopup(elt);
+
+    }
+
+</script>	    
+        
+        
+		<td id="cell_826" class="timeSlot" title="5:00 AM / 5:00 AM UTC (Sunday)">
+							
+				<!--add button and cell day and time-->
+				<span class="timeInfo">Saturday 5:00 AM</span>
+				<a class="addUser" title="add a new user to this slot" onclick="myWalladmin.newUserPopup(this);" href="javascript:void(0);"></a>
+			
+				<div id="user_463" class="slot-user userSlot">
+					<a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.removeUser(this);"></a>
+					<span class="userCardName">S. Villarreal</span>
+					<br />
+					<span class="userTimeInfo">Saturday 5:00 AM</span>
+				</div>
+			
+			
+		</td>            
+	</tr>
+<!--end increment index row-->        
+
+</table>
+</div>
+
+<div id="newUserClone" class="new-wall-user" style="display: none;">
+    <a href="javascript:void(0);" class="close-btn-new-user" onclick="myWalladmin.closenewUserModal(this); return false;" title="cancel"></a>
+    <!--Create new or Find existing?-->
+    <div id="dashboardOptions">
+        <a href="#" class="dashboardOption dashBoardaddAnExistingUser" onclick="$('dashboardOptions').hide(); $('addExistingUser').show(); return false;">Add an Existing User</a> 
+		<a href="#" class="dashboardOption dashBoardcreateNewUser" onclick="$('dashboardOptions').hide(); $('addNewUser').show(); return false;">Create a New User</a>
+    </div>
+    <!--Add new user section-->
+    <div id="addNewUser">
+        <form action="javascript:myWalladmin.addNewUser(this);" id="newUserForm" class="form-small">
+            <fieldset>
+				<legend>Add New User<em id="newUserDateInfo"></em></legend>
+				<div>
+				    <input name="login" type="text" size="30" class="inputBox labelInside" id="login" value="username" onfocus="if(this.value=='username'){this.value=''; this.removeClassName('labelInside');}" onblur="if(this.value==''){this.value='username'; this.addClassName('labelInside');}"/>
+				</div>
+				<div class="twoColumnLeft">
+				    <input id="first_name" name="first_name" size="30" type="text" class="inputBox labelInside"  value="first name" onfocus="if(this.value=='first name'){this.value=''; this.removeClassName('labelInside');}" onblur="if(this.value==''){this.value='first name'; this.addClassName('labelInside');}" />
+				</div>
+				<div class="twoColumnRight">
+				    <input id="last_name" name="last_name" size="30" type="text" class="inputBox labelInside" value="last name" onfocus="if(this.value=='last name'){this.value=''; this.removeClassName('labelInside');}" onblur="if(this.value==''){this.value='last name'; this.addClassName('labelInside');}"/>
+				</div>
+				
+				<div class="cleaner"></div>
+				<div>
+				    <input id="phone" name="phone" size="30" type="text" class="inputBox labelInside" value="phone" onfocus="if(this.value=='phone'){this.value=''; this.removeClassName('labelInside');}" onblur="if(this.value==''){this.value='phone'; this.addClassName('labelInside');}"/>
+				</div>
+				<div>
+				    <input id="email" name="email" size="30" type="text" class="inputBox labelInside" value="email" onfocus="if(this.value=='email'){this.value=''; this.removeClassName('labelInside');}" onblur="if(this.value==''){this.value='email'; this.addClassName('labelInside');}"/>
+				</div>
+				<div>
+				    <input id="password" name="password" size="30" type="text" class="inputBox labelInside" value="password" onfocus="if(this.value=='password'){this.value='';this.type='password'; this.removeClassName('labelInside');}" onblur="if(this.value==''){this.value='password';this.type='text'; this.addClassName('labelInside');}"/>
+				</div>
+				<span id="userErrorSpan" class="userAddError"></span>
+            <input name="commit" type="submit" value="Im done!" class="submitBtn"/>
+            </fieldset>
+        </form>
+    </div>
+    <!--Add current user section-->
+    <div id="addExistingUser">
+        <form action="javascript:void(0);" id="findUserForm" class="form-small">
+            <fieldset>
+				<legend>Find an Existing User</legend>
+				<div>
+				    <input name="usersearch[name]" type="text" size="30" class="inputBox" id="usersearch" value="live user search" onfocus="if(this.value=='live user search'){this.value='';}" onblur="if(this.value==''){this.value='live user search';}"/>
+				</div>
+				<div id="findUserResults">
+				<ul class="userlists">
+					<li class="userlist">Start typing the first name or last name above, and we'll do the rest.</li>
+					<li class="userlist">The results will be listed here, once you find what you're looking for, give it a click. Simple.</li>
+				</ul>
+				</div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div class="slot-user userSlot" style="display: none;">
+    <a href="javascript:void(0);" class="wall-remove-btn" title="remove from this slot" onclick="myWalladmin.remove(this);"></a> <span class="userCardName">Username</span> <br />
+    <span class="userTimeInfo">Time info</span>
+</div>
+
+
+
+      </div>
+      <div id="footer">
+        <div id="footer-top"></div>
+        <div id="footer-body">
+          <div id="footer-body-content">
+            <p>LiftPrayer.net is a ministry of <a href="http://www.sugarcreek.net">Sugar Creek Baptist Church</a>. 
+            &copy;2007 Sugar Creek Baptist Church. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  
+</html>

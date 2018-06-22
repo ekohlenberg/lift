@@ -1,0 +1,2197 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sugar Creek Baptist Church - Prayer Requests</title>
+
+    <script src="/javascripts/prototype.js" type="text/javascript"></script>
+    <script src="/javascripts/effects.js" type="text/javascript"></script>
+    <script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+    <script src="/javascripts/controls.js" type="text/javascript"></script>
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+    <script src="/javascripts/swfobject.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/form.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/custom-default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/custom-scbc.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+    <link href="http://sugarcreek.liftprayer.net/request/rss" rel="alternate" title="RSS" type="application/rss+xml" />
+</head>
+<body id="watchman">
+    <div>
+        <img id="staticSpinner" src="/images/staticspinner.gif" alt="" width="100" height="25"
+            style="display: none;" />
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="header-top">
+                <div id="header-top-right">
+                    <div id="userDetail">
+                        <h3 class="userInfo">
+                            Eric Kohlenberg (<a href="/login/logout">Log Out</a>) <span class="pipe">|</span><a
+                                href="/help" class="">Help</a> <span class="pipe">|</span><a href="/contact" class="">Contact
+                                    Us</a>
+                            <br />
+                            My Prayer Time: <strong>Northeast Wall, Friday-5:00 AM</strong>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div id="header-center">
+                <div id="header-center-top">
+                </div>
+                <div id="header-center-center">
+                    <img alt="Lift_banner1" src="/images/LIFT_Banner1.jpg?1238205534" />
+                </div>
+                <div id="header-center-bottom">
+                    <ul class="leftAlignedNav">
+                        <li class="addButton"><a href="/request/new">
+                            <img src='/images/plus-green-sml.gif' alt='' />Add Prayer Request</a></li>
+                    </ul>
+                    <ul class="rightAlignedNav">
+                        <li><a href="/request">Prayer Requests</a></li>
+                        <li><a href="/prayersession" title="An online prayer helper">Prayer Session</a></li>
+                        <li><a href="/wall" title="Sign up or change your prayer hour">Watchman Wall</a></li>
+                        <li><a href="/account">My Account</a></li>
+                        <li><a href="/admin">Administration</a></li>
+                    </ul>
+                </div>
+                <div class="head-info">
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="commands">
+                <h2>
+                    Current Users</h2>
+                <div id="liveSearch" class="userform">
+                    <form action="/user/live_search" method="post" onsubmit="Element.show('staticSpinner'); new Ajax.Request('/user/live_search', {asynchronous:true, evalScripts:true, method:'get', onComplete:function(request){Element.hide('staticSpinner')}, parameters:Form.serialize(this)}); return false;">
+                        <input class="inputBox" id="liveSearchBox" maxlength="25" name="liveSearchBox" type="text" />
+                        <input name="commit" type="submit" value="Search" />
+                    </form>
+                </div>
+                <a href="/user/new">
+                    <img alt="User_add" src="/images/layout/administration/user_add.gif" /><br />
+                    Add User</a>
+            </div>
+            <div class="cleaner">
+                &nbsp;
+            </div>
+            <div id="listmain">
+                <br />
+                <div class="pagerNavigation" id="pgr_top">
+                    <div class="pagination">
+                        <span class="disabled prev_page">&laquo; Previous</span> <span class="current">1</span>
+                        <a href="/user/list?page=2" rel="next">2</a> <a href="/user/list?page=3">3</a> <a
+                            href="/user/list?page=4">4</a> <a href="/user/list?page=5">5</a> <a href="/user/list?page=6">
+                                6</a> <a href="/user/list?page=7">7</a> <a href="/user/list?page=8">8</a>
+                        <a href="/user/list?page=9">9</a> <span class="gap">&hellip;</span> <a href="/user/list?page=24">
+                            24</a> <a href="/user/list?page=25">25</a> <a href="/user/list?page=2" class="next_page"
+                                rel="next">Next &raquo;</a></div>
+                </div>
+                <br />
+                <div id="userslist">
+                    <div id="usercard549">
+                        <div class="userCard">
+                            <div id="cardright549" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/549">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Letha Adams?')) { new Ajax.Updater('usercard549', '/user/update_user_state?new_state=4&amp;user_id=549', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_549_in_place_editor">Letha</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_549_in_place_editor', '/user/set_user_first_name/549', {cols:5})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_549_in_place_editor">Adams</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_549_in_place_editor', '/user/set_user_last_name/549', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">East Wall, Monday-9:00 AM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                lethaadams
+                            </h3>
+                            <span class="cardtext"><a href="mailto:lmadams@academicplanet.com">lmadams@academicplanet.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_549_in_place_editor">2220 Cherry
+                                    Ln</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_549_in_place_editor', '/user/set_user_address/549', {cols:14})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_549_in_place_editor">Pasadena</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_549_in_place_editor', '/user/set_user_city/549', {cols:8})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_549_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_549_in_place_editor', '/user/set_user_state_provience/549', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_549_in_place_editor">77502-4043</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_549_in_place_editor', '/user/set_user_postal_code/549', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_549_in_place_editor">713-477-2605</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_549_in_place_editor', '/user/set_user_phone/549', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard548">
+                        <div class="userCard">
+                            <div id="cardright548" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/548">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Warren Adams?')) { new Ajax.Updater('usercard548', '/user/update_user_state?new_state=4&amp;user_id=548', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_548_in_place_editor">Warren</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_548_in_place_editor', '/user/set_user_first_name/548', {cols:6})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_548_in_place_editor">Adams</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_548_in_place_editor', '/user/set_user_last_name/548', {cols:6})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">West Wall, Monday-9:00 AM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                warrenadams
+                            </h3>
+                            <span class="cardtext"><a href="mailto:lmadams@academicplanet.com">lmadams@academicplanet.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_548_in_place_editor">2220 Cherry
+                                    Ln</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_548_in_place_editor', '/user/set_user_address/548', {cols:14})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_548_in_place_editor">Pasadena</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_548_in_place_editor', '/user/set_user_city/548', {cols:8})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_548_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_548_in_place_editor', '/user/set_user_state_provience/548', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_548_in_place_editor">77502-4043</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_548_in_place_editor', '/user/set_user_postal_code/548', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_548_in_place_editor">713-477-2605</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_548_in_place_editor', '/user/set_user_phone/548', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard112">
+                        <div class="userCard">
+                            <div id="cardright112" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/112">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Adeleke Adetunji?')) { new Ajax.Updater('usercard112', '/user/update_user_state?new_state=4&amp;user_id=112', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_112_in_place_editor">Adeleke</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_112_in_place_editor', '/user/set_user_first_name/112', {cols:7})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_112_in_place_editor">Adetunji</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_112_in_place_editor', '/user/set_user_last_name/112', {cols:7})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                adelekeadetunji
+                            </h3>
+                            <span class="cardtext"><a href="mailto:dadetunji@houston.rr.com">dadetunji@houston.rr.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_112_in_place_editor">2414 Drs Dr</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_112_in_place_editor', '/user/set_user_address/112', {cols:11})
+//]]>
+                                </script><br />
+                                <span class="in_place_editor_field" id="user_city_112_in_place_editor">Richmond</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_112_in_place_editor', '/user/set_user_city/112', {cols:8})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_112_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_112_in_place_editor', '/user/set_user_state_provience/112', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_112_in_place_editor">77469-1909</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_112_in_place_editor', '/user/set_user_postal_code/112', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_112_in_place_editor">281-232-3102</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_112_in_place_editor', '/user/set_user_phone/112', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard113">
+                        <div class="userCard">
+                            <div id="cardright113" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/113">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Donna Adetunji?')) { new Ajax.Updater('usercard113', '/user/update_user_state?new_state=4&amp;user_id=113', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_113_in_place_editor">Donna</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_113_in_place_editor', '/user/set_user_first_name/113', {cols:5})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_113_in_place_editor">Adetunji</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_113_in_place_editor', '/user/set_user_last_name/113', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                donnaadetunji
+                            </h3>
+                            <span class="cardtext"><a href="mailto:dadetunji@houston.rr.com">dadetunji@houston.rr.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_113_in_place_editor">2414 Drs Dr</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_113_in_place_editor', '/user/set_user_address/113', {cols:11})
+//]]>
+                                </script><br />
+                                <span class="in_place_editor_field" id="user_city_113_in_place_editor">Richmond</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_113_in_place_editor', '/user/set_user_city/113', {cols:8})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_113_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_113_in_place_editor', '/user/set_user_state_provience/113', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_113_in_place_editor">77469-1909</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_113_in_place_editor', '/user/set_user_postal_code/113', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_113_in_place_editor">281-232-3102</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_113_in_place_editor', '/user/set_user_phone/113', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard12">
+                        <div class="userCard">
+                            <div id="cardright12" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/12">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Gerardo Aguirre?')) { new Ajax.Updater('usercard12', '/user/update_user_state?new_state=4&amp;user_id=12', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_12_in_place_editor">Gerardo</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_12_in_place_editor', '/user/set_user_first_name/12', {cols:7})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_12_in_place_editor">Aguirre</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_12_in_place_editor', '/user/set_user_last_name/12', {cols:7})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                gerardoaguirre
+                            </h3>
+                            <span class="cardtext"><a href="mailto:aguirre-family@sbcglobal.net">aguirre-family@sbcglobal.net</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_12_in_place_editor">8015 Crestwick
+                                    Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_12_in_place_editor', '/user/set_user_address/12', {cols:17})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_12_in_place_editor">Houston</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_12_in_place_editor', '/user/set_user_city/12', {cols:7})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_12_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_12_in_place_editor', '/user/set_user_state_provience/12', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_12_in_place_editor">77083-4418</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_12_in_place_editor', '/user/set_user_postal_code/12', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_12_in_place_editor">281-564-5290</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_12_in_place_editor', '/user/set_user_phone/12', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard766">
+                        <div class="userCard">
+                            <div id="cardright766" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/766">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Deidre Allen?')) { new Ajax.Updater('usercard766', '/user/update_user_state?new_state=4&amp;user_id=766', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_766_in_place_editor">Deidre</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_766_in_place_editor', '/user/set_user_first_name/766', {cols:6})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_766_in_place_editor">Allen</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_766_in_place_editor', '/user/set_user_last_name/766', {cols:6})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                Deidre
+                            </h3>
+                            <span class="cardtext"><a href="mailto:deidre0765@yahoo.com">deidre0765@yahoo.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_766_in_place_editor">3335 Big Horn
+                                    Court</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_766_in_place_editor', '/user/set_user_address/766', {cols:19})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_766_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_766_in_place_editor', '/user/set_user_city/766', {cols:10})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_766_in_place_editor">
+                                    Texas </span>
+
+                                <script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_766_in_place_editor', '/user/set_user_state_provience/766', {cols:6})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_766_in_place_editor">77478</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_766_in_place_editor', '/user/set_user_postal_code/766', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_766_in_place_editor">281-277-2183</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_766_in_place_editor', '/user/set_user_phone/766', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard396">
+                        <div class="userCard">
+                            <div id="cardright396" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/396">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Norma Allen?')) { new Ajax.Updater('usercard396', '/user/update_user_state?new_state=4&amp;user_id=396', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_396_in_place_editor">Norma</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_396_in_place_editor', '/user/set_user_first_name/396', {cols:5})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_396_in_place_editor">Allen</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_396_in_place_editor', '/user/set_user_last_name/396', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                normaallen
+                            </h3>
+                            <span class="cardtext"><a href="mailto:norma.allen@halliburton.net">norma.allen@halliburton.net</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_396_in_place_editor">P.O. Box 17572</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_396_in_place_editor', '/user/set_user_address/396', {cols:14})
+//]]>
+                                </script><br />
+                                <span class="in_place_editor_field" id="user_city_396_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_396_in_place_editor', '/user/set_user_city/396', {cols:10})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_396_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_396_in_place_editor', '/user/set_user_state_provience/396', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_396_in_place_editor">77496</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_396_in_place_editor', '/user/set_user_postal_code/396', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_396_in_place_editor">281-242-7230</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_396_in_place_editor', '/user/set_user_phone/396', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard550">
+                        <div class="userCard">
+                            <div id="cardright550" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/550">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Armando Almaguer?')) { new Ajax.Updater('usercard550', '/user/update_user_state?new_state=4&amp;user_id=550', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_550_in_place_editor">Armando</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_550_in_place_editor', '/user/set_user_first_name/550', {cols:7})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_550_in_place_editor">Almaguer</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_550_in_place_editor', '/user/set_user_last_name/550', {cols:7})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                armandoalmaguer
+                            </h3>
+                            <span class="cardtext"><a href="mailto:none">none</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_550_in_place_editor">11803 Haley
+                                    Hollow</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_550_in_place_editor', '/user/set_user_address/550', {cols:18})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_550_in_place_editor">Richmond</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_550_in_place_editor', '/user/set_user_city/550', {cols:8})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_550_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_550_in_place_editor', '/user/set_user_state_provience/550', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_550_in_place_editor">77469</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_550_in_place_editor', '/user/set_user_postal_code/550', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_550_in_place_editor">281-491-8503</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_550_in_place_editor', '/user/set_user_phone/550', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard4">
+                        <div class="userCard">
+                            <div id="cardright4" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/4">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable A.B. Alvarez?')) { new Ajax.Updater('usercard4', '/user/update_user_state?new_state=4&amp;user_id=4', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_4_in_place_editor">A.B.</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_4_in_place_editor', '/user/set_user_first_name/4', {cols:4})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_4_in_place_editor">Alvarez</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_4_in_place_editor', '/user/set_user_last_name/4', {cols:4})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">Northeast Wall, Monday-10:00 PM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                a.b.alvarez
+                            </h3>
+                            <span class="cardtext"><a href="mailto:ab777_a@yahoo.com">ab777_a@yahoo.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_4_in_place_editor">3935 Kitchen
+                                    Hill Ln</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_4_in_place_editor', '/user/set_user_address/4', {cols:20})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_4_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_4_in_place_editor', '/user/set_user_city/4', {cols:10})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_4_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_4_in_place_editor', '/user/set_user_state_provience/4', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_4_in_place_editor">77479-1742</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_4_in_place_editor', '/user/set_user_postal_code/4', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_4_in_place_editor">281-494-2913</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_4_in_place_editor', '/user/set_user_phone/4', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard162">
+                        <div class="userCard">
+                            <div id="cardright162" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/162">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Eddie Apel?')) { new Ajax.Updater('usercard162', '/user/update_user_state?new_state=4&amp;user_id=162', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_162_in_place_editor">Eddie</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_162_in_place_editor', '/user/set_user_first_name/162', {cols:5})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_162_in_place_editor">Apel</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_162_in_place_editor', '/user/set_user_last_name/162', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">North Wall, Wednesday-10:00 AM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                eddieapel
+                            </h3>
+                            <span class="cardtext"><a href="mailto:eapel1@aol.com">eapel1@aol.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_162_in_place_editor">2506 Plantation
+                                    Creek Ct</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_162_in_place_editor', '/user/set_user_address/162', {cols:24})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_162_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_162_in_place_editor', '/user/set_user_city/162', {cols:13})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_162_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_162_in_place_editor', '/user/set_user_state_provience/162', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_162_in_place_editor">77459-2913</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_162_in_place_editor', '/user/set_user_postal_code/162', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_162_in_place_editor">281-499-2708</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_162_in_place_editor', '/user/set_user_phone/162', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard862">
+                        <div class="userCard">
+                            <div id="cardright862" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/862">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable LaShan Arceneaux?')) { new Ajax.Updater('usercard862', '/user/update_user_state?new_state=4&amp;user_id=862', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_862_in_place_editor">LaShan</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_862_in_place_editor', '/user/set_user_first_name/862', {cols:6})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_862_in_place_editor">Arceneaux</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_862_in_place_editor', '/user/set_user_last_name/862', {cols:6})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                candlecrafts
+                            </h3>
+                            <span class="cardtext"><a href="mailto:lashan.arceneaux@gmail.com">lashan.arceneaux@gmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_862_in_place_editor">1216 Westwood
+                                    Drive #208</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_862_in_place_editor', '/user/set_user_address/862', {cols:24})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_862_in_place_editor">Rosenberg</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_862_in_place_editor', '/user/set_user_city/862', {cols:9})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_862_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_862_in_place_editor', '/user/set_user_state_provience/862', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_862_in_place_editor">77471</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_862_in_place_editor', '/user/set_user_postal_code/862', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_862_in_place_editor">281-620-5039</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_862_in_place_editor', '/user/set_user_phone/862', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard804">
+                        <div class="userCard">
+                            <div id="cardright804" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/804">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Lisa Archer?')) { new Ajax.Updater('usercard804', '/user/update_user_state?new_state=4&amp;user_id=804', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_804_in_place_editor">Lisa</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_804_in_place_editor', '/user/set_user_first_name/804', {cols:4})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_804_in_place_editor">Archer</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_804_in_place_editor', '/user/set_user_last_name/804', {cols:4})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                larcher
+                            </h3>
+                            <span class="cardtext"><a href="mailto:larcher61@yahoo.com">larcher61@yahoo.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_804_in_place_editor">1306 Hitherfield
+                                    Drive</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_804_in_place_editor', '/user/set_user_address/804', {cols:22})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_804_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_804_in_place_editor', '/user/set_user_city/804', {cols:10})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_804_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_804_in_place_editor', '/user/set_user_state_provience/804', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_804_in_place_editor">77478</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_804_in_place_editor', '/user/set_user_postal_code/804', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_804_in_place_editor">281-494-6793</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_804_in_place_editor', '/user/set_user_phone/804', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard552">
+                        <div class="userCard">
+                            <div id="cardright552" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/552">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Sharene Arocha?')) { new Ajax.Updater('usercard552', '/user/update_user_state?new_state=4&amp;user_id=552', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_552_in_place_editor">Sharene</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_552_in_place_editor', '/user/set_user_first_name/552', {cols:7})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_552_in_place_editor">Arocha</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_552_in_place_editor', '/user/set_user_last_name/552', {cols:7})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                sharenearocha
+                            </h3>
+                            <span class="cardtext"><a href="mailto:none">none</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_552_in_place_editor">8110 Lauren
+                                    Way</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_552_in_place_editor', '/user/set_user_address/552', {cols:15})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_552_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_552_in_place_editor', '/user/set_user_city/552', {cols:10})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_552_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_552_in_place_editor', '/user/set_user_state_provience/552', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_552_in_place_editor">77479</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_552_in_place_editor', '/user/set_user_postal_code/552', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_552_in_place_editor">281-545-2682</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_552_in_place_editor', '/user/set_user_phone/552', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard27">
+                        <div class="userCard">
+                            <div id="cardright27" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/27">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Carla Arriola?')) { new Ajax.Updater('usercard27', '/user/update_user_state?new_state=4&amp;user_id=27', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_27_in_place_editor">Carla</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_27_in_place_editor', '/user/set_user_first_name/27', {cols:5})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_27_in_place_editor">Arriola</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_27_in_place_editor', '/user/set_user_last_name/27', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">South Wall, Monday-9:00 PM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                carlaarriola
+                            </h3>
+                            <span class="cardtext"><a href="mailto:arriolajc@hotmail.com">arriolajc@hotmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_27_in_place_editor">1318 Divin
+                                    Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_27_in_place_editor', '/user/set_user_address/27', {cols:13})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_27_in_place_editor">Rosenberg</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_27_in_place_editor', '/user/set_user_city/27', {cols:9})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_27_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_27_in_place_editor', '/user/set_user_state_provience/27', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_27_in_place_editor">77471-2162</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_27_in_place_editor', '/user/set_user_postal_code/27', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_27_in_place_editor">281-239-7020</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_27_in_place_editor', '/user/set_user_phone/27', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard759">
+                        <div class="userCard">
+                            <div id="cardright759" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/759">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Charles Arvin?')) { new Ajax.Updater('usercard759', '/user/update_user_state?new_state=4&amp;user_id=759', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_759_in_place_editor">Charles</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_759_in_place_editor', '/user/set_user_first_name/759', {cols:7})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_759_in_place_editor">Arvin</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_759_in_place_editor', '/user/set_user_last_name/759', {cols:7})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                Chuck122990
+                            </h3>
+                            <span class="cardtext"><a href="mailto:Chuck122990@gmail.com">Chuck122990@gmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_759_in_place_editor">8511 Stones
+                                    Throw Lane</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_759_in_place_editor', '/user/set_user_address/759', {cols:22})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_759_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_759_in_place_editor', '/user/set_user_city/759', {cols:13})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_759_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_759_in_place_editor', '/user/set_user_state_provience/759', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_759_in_place_editor">77459</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_759_in_place_editor', '/user/set_user_postal_code/759', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_759_in_place_editor">281-778-8569</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_759_in_place_editor', '/user/set_user_phone/759', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard229">
+                        <div class="userCard">
+                            <div id="cardright229" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/229">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Roark Ashie?')) { new Ajax.Updater('usercard229', '/user/update_user_state?new_state=4&amp;user_id=229', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_229_in_place_editor">Roark</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_229_in_place_editor', '/user/set_user_first_name/229', {cols:5})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_229_in_place_editor">Ashie</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_229_in_place_editor', '/user/set_user_last_name/229', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                roarkashie
+                            </h3>
+                            <span class="cardtext"><a href="mailto:impalass350@hotmail.com">impalass350@hotmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_229_in_place_editor">4511 Westray
+                                    Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_229_in_place_editor', '/user/set_user_address/229', {cols:15})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_229_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_229_in_place_editor', '/user/set_user_city/229', {cols:13})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_229_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_229_in_place_editor', '/user/set_user_state_provience/229', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_229_in_place_editor">77459-2758</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_229_in_place_editor', '/user/set_user_postal_code/229', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_229_in_place_editor">713-589-5788</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_229_in_place_editor', '/user/set_user_phone/229', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard81">
+                        <div class="userCard">
+                            <div id="cardright81" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/81">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Carolina Askew?')) { new Ajax.Updater('usercard81', '/user/update_user_state?new_state=4&amp;user_id=81', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_81_in_place_editor">Carolina</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_81_in_place_editor', '/user/set_user_first_name/81', {cols:8})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_81_in_place_editor">Askew</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_81_in_place_editor', '/user/set_user_last_name/81', {cols:8})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                carolinaaskew
+                            </h3>
+                            <span class="cardtext"><a href="mailto:carolina.c.askew@chase.com">carolina.c.askew@chase.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_81_in_place_editor">4134 Custer
+                                    Creek Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_81_in_place_editor', '/user/set_user_address/81', {cols:20})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_81_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_81_in_place_editor', '/user/set_user_city/81', {cols:13})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_81_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_81_in_place_editor', '/user/set_user_state_provience/81', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_81_in_place_editor">77459-1544</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_81_in_place_editor', '/user/set_user_postal_code/81', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_81_in_place_editor">281-208-4568</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_81_in_place_editor', '/user/set_user_phone/81', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard151">
+                        <div class="userCard">
+                            <div id="cardright151" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/151">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Megan Askew?')) { new Ajax.Updater('usercard151', '/user/update_user_state?new_state=4&amp;user_id=151', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_151_in_place_editor">Megan</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_151_in_place_editor', '/user/set_user_first_name/151', {cols:5})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_151_in_place_editor">Askew</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_151_in_place_editor', '/user/set_user_last_name/151', {cols:5})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                meganaskew
+                            </h3>
+                            <span class="cardtext"><a href="mailto:dragonite2005@aol.com">dragonite2005@aol.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_151_in_place_editor">4134 Custer
+                                    Creek Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_151_in_place_editor', '/user/set_user_address/151', {cols:20})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_151_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_151_in_place_editor', '/user/set_user_city/151', {cols:13})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_151_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_151_in_place_editor', '/user/set_user_state_provience/151', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_151_in_place_editor">77459-1544</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_151_in_place_editor', '/user/set_user_postal_code/151', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_151_in_place_editor">281-208-4568</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_151_in_place_editor', '/user/set_user_phone/151', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard350">
+                        <div class="userCard">
+                            <div id="cardright350" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/350">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Mary Atos?')) { new Ajax.Updater('usercard350', '/user/update_user_state?new_state=4&amp;user_id=350', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_350_in_place_editor">Mary</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_350_in_place_editor', '/user/set_user_first_name/350', {cols:4})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_350_in_place_editor">Atos</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_350_in_place_editor', '/user/set_user_last_name/350', {cols:4})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                maryatos
+                            </h3>
+                            <span class="cardtext"><a href="mailto:mary_atos@hotmail.com">mary_atos@hotmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_350_in_place_editor">2027 Sandy
+                                    Knoll Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_350_in_place_editor', '/user/set_user_address/350', {cols:19})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_350_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_350_in_place_editor', '/user/set_user_city/350', {cols:13})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_350_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_350_in_place_editor', '/user/set_user_state_provience/350', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_350_in_place_editor">77489-2901</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_350_in_place_editor', '/user/set_user_postal_code/350', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_350_in_place_editor">281-499-6129</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_350_in_place_editor', '/user/set_user_phone/350', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard367">
+                        <div class="userCard">
+                            <div id="cardright367" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/367">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Mary Atos?')) { new Ajax.Updater('usercard367', '/user/update_user_state?new_state=4&amp;user_id=367', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_367_in_place_editor">Mary</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_367_in_place_editor', '/user/set_user_first_name/367', {cols:4})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_367_in_place_editor">Atos</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_367_in_place_editor', '/user/set_user_last_name/367', {cols:4})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                maryatos
+                            </h3>
+                            <span class="cardtext"><a href="mailto:mladyrose7@hotmail.com">mladyrose7@hotmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_367_in_place_editor">2027 Sandy
+                                    Knoll Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_367_in_place_editor', '/user/set_user_address/367', {cols:19})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_367_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_367_in_place_editor', '/user/set_user_city/367', {cols:13})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_367_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_367_in_place_editor', '/user/set_user_state_provience/367', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_367_in_place_editor">77489-2901</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_367_in_place_editor', '/user/set_user_postal_code/367', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_367_in_place_editor">281-499-6129</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_367_in_place_editor', '/user/set_user_phone/367', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard553">
+                        <div class="userCard">
+                            <div id="cardright553" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/553">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Robert Aubry?')) { new Ajax.Updater('usercard553', '/user/update_user_state?new_state=4&amp;user_id=553', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_553_in_place_editor">Robert</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_553_in_place_editor', '/user/set_user_first_name/553', {cols:6})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_553_in_place_editor">Aubry</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_553_in_place_editor', '/user/set_user_last_name/553', {cols:6})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                robertaubry
+                            </h3>
+                            <span class="cardtext"><a href="mailto:none">none</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_553_in_place_editor">3418 Rolling
+                                    Green Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_553_in_place_editor', '/user/set_user_address/553', {cols:21})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_553_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_553_in_place_editor', '/user/set_user_city/553', {cols:13})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_553_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_553_in_place_editor', '/user/set_user_state_provience/553', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_553_in_place_editor">77459-4029</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_553_in_place_editor', '/user/set_user_postal_code/553', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_553_in_place_editor">281-499-2746</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_553_in_place_editor', '/user/set_user_phone/553', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard873">
+                        <div class="userCard">
+                            <div id="cardright873" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/873">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable John Austin?')) { new Ajax.Updater('usercard873', '/user/update_user_state?new_state=4&amp;user_id=873', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_873_in_place_editor">John</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_873_in_place_editor', '/user/set_user_first_name/873', {cols:4})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_873_in_place_editor">Austin</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_873_in_place_editor', '/user/set_user_last_name/873', {cols:4})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                jcaustin
+                            </h3>
+                            <span class="cardtext"><a href="mailto:johna@gfbc.org">johna@gfbc.org</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_873_in_place_editor">940 Main Street</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_873_in_place_editor', '/user/set_user_address/873', {cols:15})
+//]]>
+                                </script><br />
+                                <span class="in_place_editor_field" id="user_city_873_in_place_editor">Gardendale</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_873_in_place_editor', '/user/set_user_city/873', {cols:10})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_873_in_place_editor">
+                                    AL</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_873_in_place_editor', '/user/set_user_state_provience/873', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_873_in_place_editor">35071</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_873_in_place_editor', '/user/set_user_postal_code/873', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_873_in_place_editor">205-223-7064</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_873_in_place_editor', '/user/set_user_phone/873', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard719">
+                        <div class="userCard">
+                            <div id="cardright719" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/719">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable John Austin?')) { new Ajax.Updater('usercard719', '/user/update_user_state?new_state=4&amp;user_id=719', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_719_in_place_editor">John</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_719_in_place_editor', '/user/set_user_first_name/719', {cols:4})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_719_in_place_editor">Austin</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_719_in_place_editor', '/user/set_user_last_name/719', {cols:4})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                jaustin
+                            </h3>
+                            <span class="cardtext"><a href="mailto:jaustin@sugarcreek.net">jaustin@sugarcreek.net</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_719_in_place_editor">8282 Cambridge
+                                    #1505</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_719_in_place_editor', '/user/set_user_address/719', {cols:20})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_719_in_place_editor">Houston</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_719_in_place_editor', '/user/set_user_city/719', {cols:7})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_719_in_place_editor">
+                                    Texas </span>
+
+                                <script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_719_in_place_editor', '/user/set_user_state_provience/719', {cols:6})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_719_in_place_editor">77054</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_719_in_place_editor', '/user/set_user_postal_code/719', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_719_in_place_editor">8324745005</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_719_in_place_editor', '/user/set_user_phone/719', {cols:10})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard555">
+                        <div class="userCard">
+                            <div id="cardright555" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/555">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Eleanor Ayangco?')) { new Ajax.Updater('usercard555', '/user/update_user_state?new_state=4&amp;user_id=555', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_555_in_place_editor">Eleanor</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_555_in_place_editor', '/user/set_user_first_name/555', {cols:7})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_555_in_place_editor">Ayangco</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_555_in_place_editor', '/user/set_user_last_name/555', {cols:7})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                eleanorayangco
+                            </h3>
+                            <span class="cardtext"><a href="mailto:none">none</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_555_in_place_editor">16330 Stella
+                                    Ct</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_555_in_place_editor', '/user/set_user_address/555', {cols:15})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_555_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_555_in_place_editor', '/user/set_user_city/555', {cols:10})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_555_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_555_in_place_editor', '/user/set_user_state_provience/555', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_555_in_place_editor">77478</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_555_in_place_editor', '/user/set_user_postal_code/555', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_555_in_place_editor">281-265-2538</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_555_in_place_editor', '/user/set_user_phone/555', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard554">
+                        <div class="userCard">
+                            <div id="cardright554" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/554">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Noel Ayangco?')) { new Ajax.Updater('usercard554', '/user/update_user_state?new_state=4&amp;user_id=554', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_554_in_place_editor">Noel</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_554_in_place_editor', '/user/set_user_first_name/554', {cols:4})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_554_in_place_editor">Ayangco</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_554_in_place_editor', '/user/set_user_last_name/554', {cols:4})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                noelayangco
+                            </h3>
+                            <span class="cardtext"><a href="mailto:none">none</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_554_in_place_editor">16330 Stella
+                                    Ct</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_554_in_place_editor', '/user/set_user_address/554', {cols:15})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_554_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_554_in_place_editor', '/user/set_user_city/554', {cols:10})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_554_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_554_in_place_editor', '/user/set_user_state_provience/554', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_554_in_place_editor">77478</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_554_in_place_editor', '/user/set_user_postal_code/554', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_554_in_place_editor">281-265-2538</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_554_in_place_editor', '/user/set_user_phone/554', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard295">
+                        <div class="userCard">
+                            <div id="cardright295" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/295">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Kelly Baca?')) { new Ajax.Updater('usercard295', '/user/update_user_state?new_state=4&amp;user_id=295', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_295_in_place_editor">Kelly</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_295_in_place_editor', '/user/set_user_first_name/295', {cols:5})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_295_in_place_editor">Baca</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_295_in_place_editor', '/user/set_user_last_name/295', {cols:5})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">South Wall, Tuesday-3:00 AM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                kellybaca
+                            </h3>
+                            <span class="cardtext"><a href="mailto:klbaca@hotmail.com">klbaca@hotmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_295_in_place_editor">PO Box 140</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_295_in_place_editor', '/user/set_user_address/295', {cols:10})
+//]]>
+                                </script><br />
+                                <span class="in_place_editor_field" id="user_city_295_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_295_in_place_editor', '/user/set_user_city/295', {cols:10})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_295_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_295_in_place_editor', '/user/set_user_state_provience/295', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_295_in_place_editor">77487-0140</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_295_in_place_editor', '/user/set_user_postal_code/295', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_295_in_place_editor">281-491-0796</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_295_in_place_editor', '/user/set_user_phone/295', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard849">
+                        <div class="userCard">
+                            <div id="cardright849" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/849">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Carole Baezner?')) { new Ajax.Updater('usercard849', '/user/update_user_state?new_state=4&amp;user_id=849', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_849_in_place_editor">Carole</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_849_in_place_editor', '/user/set_user_first_name/849', {cols:6})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_849_in_place_editor">Baezner</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_849_in_place_editor', '/user/set_user_last_name/849', {cols:6})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                cbaezner
+                            </h3>
+                            <span class="cardtext"><a href="mailto:cbaezner@earthlink.net">cbaezner@earthlink.net</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_849_in_place_editor">2854 Oak Hill
+                                    Dr.</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_849_in_place_editor', '/user/set_user_address/849', {cols:17})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_849_in_place_editor">missouri City
+                                </span>
+
+                                <script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_849_in_place_editor', '/user/set_user_city/849', {cols:14})
+//]]>
+                                </script>
+
+                                , <span class="in_place_editor_field" id="user_state_provience_849_in_place_editor">
+                                    tX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_849_in_place_editor', '/user/set_user_state_provience/849', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_849_in_place_editor">77459</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_849_in_place_editor', '/user/set_user_postal_code/849', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_849_in_place_editor">281-499-0446</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_849_in_place_editor', '/user/set_user_phone/849', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard85">
+                        <div class="userCard">
+                            <div id="cardright85" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/85">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Carole Baezner?')) { new Ajax.Updater('usercard85', '/user/update_user_state?new_state=4&amp;user_id=85', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_85_in_place_editor">Carole</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_85_in_place_editor', '/user/set_user_first_name/85', {cols:6})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_85_in_place_editor">Baezner</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_85_in_place_editor', '/user/set_user_last_name/85', {cols:6})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">South Wall, Saturday-6:00 AM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                carolebaezner
+                            </h3>
+                            <span class="cardtext"><a href="mailto:cbaezner@earthlink.net">cbaezner@earthlink.net</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_85_in_place_editor">2854 Oak Hill
+                                    Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_85_in_place_editor', '/user/set_user_address/85', {cols:16})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_85_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_85_in_place_editor', '/user/set_user_city/85', {cols:13})
+//]]>
+
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_85_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_85_in_place_editor', '/user/set_user_state_provience/85', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_85_in_place_editor">77459</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_85_in_place_editor', '/user/set_user_postal_code/85', {cols:5})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_85_in_place_editor">281-499-0446</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_85_in_place_editor', '/user/set_user_phone/85', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard235">
+                        <div class="userCard">
+                            <div id="cardright235" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/235">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Jennifer Baezner?')) { new Ajax.Updater('usercard235', '/user/update_user_state?new_state=4&amp;user_id=235', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_235_in_place_editor">Jennifer</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_235_in_place_editor', '/user/set_user_first_name/235', {cols:8})
+//]]>
+
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_235_in_place_editor">Baezner</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_235_in_place_editor', '/user/set_user_last_name/235', {cols:8})
+//]]>
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">North Wall, Tuesday-9:00 PM</span>
+                            <br />
+                            <br />
+                            <h3>
+                                jenniferbaezner
+                            </h3>
+                            <span class="cardtext"><a href="mailto:jbaezner@hotmail.com">jbaezner@hotmail.com</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_235_in_place_editor">2854 Oak Hill
+                                    Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_235_in_place_editor', '/user/set_user_address/235', {cols:16})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_235_in_place_editor">Missouri City</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_235_in_place_editor', '/user/set_user_city/235', {cols:13})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_235_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_235_in_place_editor', '/user/set_user_state_provience/235', {cols:2})
+//]]>
+
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_235_in_place_editor">77459-2533</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_235_in_place_editor', '/user/set_user_postal_code/235', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_235_in_place_editor">281-499-0446</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_235_in_place_editor', '/user/set_user_phone/235', {cols:12})
+//]]>
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div id="usercard509">
+                        <div class="userCard">
+                            <div id="cardright509" style="float: right; padding-right: 20px;">
+                                <a href="/user/edit/509">edit</a>&nbsp;| <a href="#" onclick="if (confirm('Do you want to disable Deborah Baker?')) { new Ajax.Updater('usercard509', '/user/update_user_state?new_state=4&amp;user_id=509', {asynchronous:true, evalScripts:true}); }; return false;">
+                                    disable</a>
+                            </div>
+                            <h2 style="padding-bottom: 0px; margin-bottom: 0;">
+                                <span class="in_place_editor_field" id="user_first_name_509_in_place_editor">Deborah</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_first_name_509_in_place_editor', '/user/set_user_first_name/509', {cols:7})
+//]]>
+                                </script>
+
+                                <span class="in_place_editor_field" id="user_last_name_509_in_place_editor">Baker</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_last_name_509_in_place_editor', '/user/set_user_last_name/509', {cols:7})
+//]]>
+
+                                </script>
+
+                            </h2>
+                            <span style="font-size: 9px;">none</span>
+                            <br />
+                            <br />
+                            <h3>
+                                deborahbaker
+                            </h3>
+                            <span class="cardtext"><a href="mailto:texbakers@alltel.net">texbakers@alltel.net</a>
+                                <br />
+                                <span class="in_place_editor_field" id="user_address_509_in_place_editor">5214 Rebel
+                                    Ridge Dr</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_address_509_in_place_editor', '/user/set_user_address/509', {cols:19})
+//]]>
+                                    </script><br />
+                                <span class="in_place_editor_field" id="user_city_509_in_place_editor">Sugar Land</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_city_509_in_place_editor', '/user/set_user_city/509', {cols:10})
+//]]>
+                                </script>, <span class="in_place_editor_field" id="user_state_provience_509_in_place_editor">
+                                    TX</span><script type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_state_provience_509_in_place_editor', '/user/set_user_state_provience/509', {cols:2})
+//]]>
+                                    </script>
+
+                                <span class="in_place_editor_field" id="user_postal_code_509_in_place_editor">77478-5472</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_postal_code_509_in_place_editor', '/user/set_user_postal_code/509', {cols:10})
+//]]>
+                                </script>
+
+                                <br />
+                                <br />
+                                p:<span class="in_place_editor_field" id="user_phone_509_in_place_editor">281-240-8263</span><script
+                                    type="text/javascript">
+//<![CDATA[
+new Ajax.InPlaceEditor('user_phone_509_in_place_editor', '/user/set_user_phone/509', {cols:12})
+//]]>
+
+                                </script>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleaner">
+                    &nbsp;
+                </div>
+                <br />
+                <div class="pagerNavigation" id="pgr_bottom">
+                    <div class="pagination">
+                        <span class="disabled prev_page">&laquo; Previous</span> <span class="current">1</span>
+                        <a href="/user/list?page=2" rel="next">2</a> <a href="/user/list?page=3">3</a> <a
+                            href="/user/list?page=4">4</a> <a href="/user/list?page=5">5</a> <a href="/user/list?page=6">
+                                6</a> <a href="/user/list?page=7">7</a> <a href="/user/list?page=8">8</a>
+                        <a href="/user/list?page=9">9</a> <span class="gap">&hellip;</span> <a href="/user/list?page=24">
+                            24</a> <a href="/user/list?page=25">25</a> <a href="/user/list?page=2" class="next_page"
+                                rel="next">Next &raquo;</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-top">
+            </div>
+            <div id="footer-body">
+                <div id="footer-body-content">
+                    <p>
+                        LiftPrayer.net is a ministry of <a href="http://www.sugarcreek.net">Sugar Creek Baptist
+                            Church</a>. &copy;2007 Sugar Creek Baptist Church. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

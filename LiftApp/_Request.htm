@@ -1,0 +1,45 @@
+<!--Start prayer request layer-->
+<br/>
+<div id="request<%=id%>"class="prayerRequest">
+  <div class="prBody">
+	<h3><a href="EditRequest.aspx?id=<%=id%>&active=<%=active%>"><%=request_title%></a></h3>
+	<%=private%>
+		<p class="prSubmittedBy">
+	  <%=submitted_by%> <%=auth_from%> (<%=last_updated_about%>) <%=awaiting_approval%>  <%=inappropriate_markup%>
+		  </p>
+		  <%=update_html%>
+		<p>
+		 <%=description_html%>
+		 </p>
+	
+	<div id="editRequest_<%=id%>" style="display: none"></div>
+	
+	<ul class="prDetails" <%=prdetails_style%> >
+	  <li><img src="<%=custom_path%>/images/comments.gif" alt="comment image"/>
+		<span id="commentCounts_<%=id%>">
+		  <span id='totalComments_<%=id%>'><a href="<%=app_path%>UpdateRequest.aspx?id=<%=id%>&active=<%=active%>" title="Add/view updates or comments for this prayer request."><%=enc_count%> <%=updates_comments%></a></span>
+
+		</span>
+	  </li>
+	  <li>
+	    <!-- NOT LOGGED IN -->
+		<!--<li id="posted<%=id%>"><img src="images/file_add.gif" alt="subscribe image"/><a href="SubscribeRequest.aspx?id=<%=id%>" title="subscribe to this request (must be logged in)"><%=keep_me_posted%></a></li> -->
+		<%=subscribe_html%>
+		<!-- TODO: Remove in 1.0 needs to be added back in version 2.0 -->
+		<!-- <li><img src="/images/removal.gif" alt="removal image"/><a href="#" class="tool comments" onclick="myRemovalform.requestRemoval('', '', '<%=REQUEST_ID%>', this); return false;" title="request that this prayer request be removed">request removal</a></li> -->
+		</li>
+	</ul>
+  </div>
+  
+  <ul class="prMarks">
+	<li id="requestMarks_<%=id%>" title="# of times request has been prayed for" class="mark-count"><strong id="prayerTotal<%=id%>"><%=total_requests%></strong><%=prayers%></li>
+    <li id="showPrayerCount<%=id%>" class="mark-it" > <a id="a<%=id%>" href="#a<%=id%>" onclick="new Ajax.Request('<%=app_path%>UpdateTotal.aspx?id=<%=id%>', { asynchronous: true, evalScripts: true }); return false;" title="Click here once you have prayed for this request"><%=pray%></a> </li>
+    <%=edit_markup%>
+    <%=approve_markup%>
+    <%=delete_markup%>
+  </ul>
+  <!-- <div id="requestRemoveForm_<%=id%>" class="removalFormHolder" >
+
+  </div> -->
+</div>
+<!--End prayer request layer-->

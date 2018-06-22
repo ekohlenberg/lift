@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="liftprayer.Layout" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        <%=LiftDomain.Organization.Current.title%>
+        - Prayer Requests</title>
+        <script type="text/javascript" src="http://script.aculo.us/prototype.js"></script>
+        <script type="text/javascript" src="http://script.aculo.us/scriptaculous.js"/></script>
+        <script type="text/javascript" src="http://script.aculo.us/controls.js"></script>
+        
+   <!-- <script src="javascripts/prototype.js" type="text/javascript"></script> -->
+    <script src="javascripts/effects.js" type="text/javascript"></script>
+    <script src="javascripts/dragdrop.js" type="text/javascript"></script>
+  <!--   <script src="javascripts/controls.js" type="text/javascript"></script> -->
+    <script src="javascripts/application.js" type="text/javascript"></script>
+    <script src="javascripts/swfobject.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    
+    <link rel="stylesheet" href="<%=customPath%>/stylesheets/lift_base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=customPath%>/stylesheets/lift_custom.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=customPath%>/stylesheets/print.css" type="text/css" media="print" />
+<%--    
+    <link rel="stylesheet" href="<%=customStylePath%>/master.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=customStylePath%>/form.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=customStylePath%>/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=customStylePath%>/custom.css" type="text/css" media="screen" />
+    
+--%>  
+<!--[if lt IE 7]>
+    <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen" />
+<![endif]-->
+    <!--<link href="http://localhost:3000/request/rss" rel="alternate" title="RSS" type="application/rss+xml" />-->
+</head>
+<body id="watchman">
+    <div>
+        <img id="staticSpinner" src="<%=customPath%>/images/staticspinner.gif" alt="" width="100" height="25"
+            style="display: none;" />
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="header-top">
+                <div id="header-top-right">
+                    <div id="userDetail">
+                        <h3 class="userInfo">
+                        <% if (!LiftDomain.User.IsLoggedIn)
+                           { %>
+                            <a href="Login.aspx"><%= LiftDomain.Language.Current.LAYOUT_LOGIN %></a> <span class="pipe"> | </span><a href="SignupUser.aspx"><%= LiftDomain.Language.Current.LOGIN_SIGN_UP %></a>
+                            <% } else { %>
+                             <%=LiftDomain.User.Current.ToString()%> (<a href="Logout.aspx"><%= LiftDomain.Language.Current.LAYOUT_LOGOUT %></a>)
+                            <% } %><span class="pipe"> | </span><a href="mailto:support@liftprayer.cc"
+                                    class=""><%=LiftDomain.Language.Current.LAYOUT_HELP%></a><span class="pipe"> | </span><a
+                                        href="Contact.aspx" class=""><%=LiftDomain.Language.Current.LAYOUT_CONTACT_US%></a>
+                                      <br />
+                                   <%=LiftDomain.Appt.ApptTime%>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div id="header-center">
+                <div id="header-center-top">
+                </div>
+                <div id="header-center-center">
+                    <img alt="Lift_banner1" src="<%=customPath%>/images/LIFT_Banner1.jpg" />
+                </div>
+                <div id="header-center-bottom">
+                  <ul class="leftAlignedNav">
+                         
+                    </ul>
+                     <ul class="rightAlignedNav">
+                       <li class="addBigButton"><a href="EditRequest.aspx">
+                            <img src='<%=customPath%>/images/plus-green-sml.gif' alt='' /><%=LiftDomain.Language.Current.LAYOUT_ADD_PRAYER_REQUEST%></a></li>
+                       
+                       <li><a href="Requests.aspx?active=1">
+                            <%=LiftDomain.Language.Current.LAYOUT_PRAYER_REQUESTS%></a></li>
+                             <li><a href="PrayerSession.aspx" title="An online prayer helper">
+                            <%=LiftDomain.Language.Current.LAYOUT_PRAYER_SESSION%></a></li>
+                        <li><a href="Wall.aspx" title="Sign up or change your prayer hour">
+                            <%=LiftDomain.Language.Current.LAYOUT_WATCHMAN_WALL%></a></li>
+                              <%if (LiftDomain.User.IsLoggedIn) {%>
+                               <li><a href="MyAccount.aspx" title="Edit your account settings"><%=LiftDomain.Language.Current.SHARED_MY_ACCOUNT%></a></li>
+                             <%} %>
+                            <%if (LiftDomain.User.Current.isAdmin) {%>
+                               <li><a href="Admin.aspx" title="Administrator functions"><%=LiftDomain.Language.Current.LAYOUT_ADMIN%></a></li>
+                             <%} %>
+                             
+                        
+                    </ul>
+                
+                </div>
+                <div class="head-info">
+               
+
+                </div>
+                 
+            </div>
+           
+        </div>
+       
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="footer">
+            <div id="footer-top">
+            </div>
+            <div id="footer-body">
+                <div id="footer-body-content">
+                    <p><%=LiftDomain.Organization.Current.footer.Value%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

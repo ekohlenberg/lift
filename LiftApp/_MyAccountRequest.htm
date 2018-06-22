@@ -1,0 +1,11 @@
+<div id="request<%=id%>" class="myRequests">
+	<h4><a class="delete-sml" href="#" onclick="if (confirm('<%=delete_request_confirmation%>')) {  new Ajax.Request( '<%=app_path%>DeleteRequest.aspx?id=<%=id%>', {asynchronous:true, evalScripts:true });} return false;" title="<%=delete_request_caption%>"><img alt="Icon-sml-delete" src="/images/layout/icon-sml-delete.gif?1238205534" /></a> 
+    <a class="blueLink" href="<%=app_path%>UpdateRequest.aspx?id=<%=id%>" ><%=title%></a></h4>
+    <p>
+            <%=display_description%>
+    </p>
+	<ul class="prMarks">
+        <li class="mark-count"><strong id="prayerTotal<%=id%>"><%=total_requests%></strong><%=prayers%></li>
+    </ul>
+</div>
+
