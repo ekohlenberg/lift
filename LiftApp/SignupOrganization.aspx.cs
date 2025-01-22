@@ -98,7 +98,7 @@ namespace liftprayer
                         thisOrgEmail.smtp_server.Value = "smtp.liftprayer.cc";
                         thisOrgEmail.smtp_username.Value = thisOrganization.subdomain.Value + "-contact@liftprayer.cc";
                         //thisOrgEmail.smtp_username.Value = "sugarcreek-contact@liftprayer.cc";
-                        thisOrgEmail.smtp_password.Value = "liftprayer";
+                        thisOrgEmail.smtp_password.Value = "reset-password";
                         thisOrgEmail.smtp_port.Value = 25;
                         thisOrgEmail.email_from.Value = thisOrganization.subdomain.Value + "-contact@liftprayer.cc";
                         //thisOrgEmail.email_from.Value = "sugarcreek-contact@liftprayer.cc";
